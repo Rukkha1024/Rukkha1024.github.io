@@ -53,7 +53,7 @@ redirect_from:
     낙상예방 운동을 시연·지도하고, 실제 어르신 대상 예방 교육 진행
     ([관련 보도](https://www.sisanews.org/articles/224088838594))
 
-  ![낙상예방 운동 시연](/images/fall-prevention-demo.jpg)
+  ![낙상예방 운동 시연](/images/fall-prevention-demo.jpg){: style="width:30%"}
 
 ## 관심 활동
 
