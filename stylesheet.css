@@ -1,0 +1,260 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+:root {
+  --accent: #e65e87;
+  --ink: #111;
+  --muted: #666;
+  --line: #e8e8e8;
+  --surface: #f6f6f6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #fff;
+  font-family: "Pretendard", Verdana, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
+.top-nav {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 18px 20px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.top-nav a {
+  color: var(--ink);
+}
+
+.top-nav a:hover,
+.top-nav a:focus-visible {
+  color: var(--accent);
+}
+
+.site-id {
+  white-space: nowrap;
+}
+
+.top-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.page {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 72px;
+}
+
+.hero {
+  padding: 22px 20px 24px;
+  display: grid;
+  grid-template-columns: minmax(0, 63fr) minmax(180px, 37fr);
+  align-items: center;
+  gap: 36px;
+}
+
+.hero h1 {
+  margin: 0 0 14px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.hero p {
+  margin: 0 0 16px;
+}
+
+.hero p:last-child {
+  margin-bottom: 0;
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 260px;
+  aspect-ratio: 1;
+  justify-self: center;
+  border: 1px dashed #c9c9c9;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  background: var(--surface);
+}
+
+.profile-photo span {
+  font-size: 13px;
+}
+
+.section {
+  padding: 30px 16px 12px;
+  scroll-margin-top: 12px;
+}
+
+.section h2 {
+  margin: 0 0 18px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.entries {
+  display: grid;
+  gap: 18px;
+}
+
+.entries.spacious {
+  gap: 28px;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 28% minmax(0, 72%);
+  align-items: start;
+}
+
+.entry-period {
+  padding-right: 18px;
+  line-height: 1.4;
+}
+
+.entry-content p {
+  margin: 0;
+}
+
+.entry-content ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.entry-content li + li {
+  margin-top: 7px;
+}
+
+.accent {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.single-entry {
+  padding-top: 2px;
+}
+
+.paper-title {
+  margin-bottom: 5px !important;
+  font-weight: 700;
+}
+
+.publication em {
+  color: #333;
+}
+
+@media (max-width: 640px) {
+  .top-nav {
+    padding: 18px 20px 8px;
+  }
+
+  .top-links {
+    gap: 14px;
+  }
+
+  .hero {
+    grid-template-columns: minmax(0, 1fr) 118px;
+    gap: 18px;
+    padding-top: 28px;
+  }
+
+  .hero h1 {
+    text-align: left;
+    font-size: 29px;
+  }
+
+  .profile-photo {
+    width: 118px;
+  }
+
+  .section {
+    padding-top: 28px;
+  }
+
+  .entry {
+    grid-template-columns: 96px minmax(0, 1fr);
+  }
+
+  .entry-period {
+    padding-right: 12px;
+  }
+}
+
+@media (max-width: 430px) {
+  body {
+    font-size: 14px;
+  }
+
+  .top-nav {
+    align-items: flex-start;
+  }
+
+  .top-links {
+    gap: 11px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-photo {
+    grid-row: 1;
+    width: 124px;
+  }
+
+  .hero h1 {
+    text-align: center;
+  }
+
+  .entry {
+    grid-template-columns: 88px minmax(0, 1fr);
+  }
+}
+
+@media print {
+  .top-nav {
+    display: none;
+  }
+
+  .page {
+    max-width: none;
+    padding: 0;
+  }
+
+  .section {
+    break-inside: avoid;
+  }
+}
