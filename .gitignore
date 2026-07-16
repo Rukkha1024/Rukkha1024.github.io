@@ -24,3 +24,6 @@ package-lock.json
 
 # Keep the original working draft local; published content lives under _pages/.
 resume.md
+
+# Keep large lecture source material (PPTX) local; only optimized images ship.
+*.pptx
