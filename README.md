@@ -36,7 +36,7 @@ Academic Pages로 만든 박사과정 유학 지원용 résumé입니다. 평소
 2. 파일명을 기존 파일과 같은 날짜-제목 형식으로 바꿉니다
    (예: `_publications/2025-06-30-muscle-synergy-analysis.md`).
 3. 파일 위쪽의 `title`, `date`, `venue`, `paperurl`, `citation`을 수정합니다.
-4. 본문의 DOI 링크를 수정하고 커밋합니다.
+4. 본문의 영어 3줄 요약을 수정하고 커밋합니다.
 
 논문 목록과 CV는 새 파일을 자동으로 불러옵니다. HTML은 수정하지 않습니다.
 

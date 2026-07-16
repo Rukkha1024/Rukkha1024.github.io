@@ -9,8 +9,11 @@ redirect_from:
 
 ## 학력
 
-- 청주대학교 스포츠의학과, 2025–2027 예정
-- 한양대학교 ERICA 스포츠코칭 전공, 2019–2025
+- [청주대학교 스포츠재활학과 홈페이지](https://www.cju.ac.kr/sptrehab/index.do),
+  스포츠의학과 석사과정, 2025–2027 예정
+  - 지도교수: [김유신 교수 — Google Scholar](https://scholar.google.co.kr/citations?user=hdV_QJMAAAAJ&hl=en)
+- [한양대학교 ERICA 스포츠코칭 전공 홈페이지](http://sportsnarts.hanyang.ac.kr/en/sport/),
+  2019–2025
 
 ## 연구 관심 분야
 
