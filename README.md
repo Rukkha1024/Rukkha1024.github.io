@@ -7,9 +7,8 @@ Academic Pages로 만든 박사과정 유학 지원용 résumé입니다. 평소
 
 ## 자주 수정하는 파일
 
-- 홈페이지 소개와 주요 연구: `_pages/about.md`
-- 학력과 전체 연구 활동: `_pages/cv.md`
-- 논문: `_publications/` 안의 논문별 Markdown 파일
+- 소개, 학력, 연구 활동, 기타 활동: `_pages/about.md`
+- 전체 논문 목록과 영어 3줄 요약: `_pages/publications.md`
 - 이름, 소개, GitHub, 이메일: `_config.yml` 상단의 `title`, `description`,
   `author` 항목
 - 상단 메뉴: `_data/navigation.yml`
@@ -30,16 +29,15 @@ Academic Pages로 만든 박사과정 유학 지원용 résumé입니다. 평소
 됩니다. 이메일이나 Scholar·ORCID 주소가 준비되면 `_config.yml`의 해당 값을
 입력합니다.
 
-## 논문 추가하기
+## 논문 추가·수정하기
 
-1. `_publications/`의 기존 파일 하나를 복제합니다.
-2. 파일명을 기존 파일과 같은 날짜-제목 형식으로 바꿉니다
-   (예: `_publications/2025-06-30-muscle-synergy-analysis.md`).
-3. 파일 위쪽의 `title`, `date`, `venue`, `paperurl`, `citation`을 수정합니다.
-4. 본문의 영어 3줄 요약을 수정하고 커밋합니다.
+1. `_pages/publications.md`를 엽니다.
+2. 기존 논문 블록 하나를 복제합니다.
+3. DOI에 직접 연결된 제목, 학술지명, 연도, 권장 인용을 수정합니다.
+4. 제목 바로 아래의 영어 3줄 요약을 수정하고 커밋합니다.
 
-논문 목록에는 영어 3줄 요약이 바로 표시되고, 논문 제목은 `paperurl`로
-연결됩니다. CV도 새 논문 파일을 자동으로 불러옵니다. HTML은 수정하지 않습니다.
+논문 목록에는 영어 3줄 요약이 바로 표시되고, 논문 제목은 DOI 주소로
+연결됩니다. 논문별 파일이나 HTML은 수정하지 않습니다.
 
 ## 사용하지 않는 기능
 

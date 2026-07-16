@@ -82,15 +82,6 @@ author:
   youtube          : # Username
   zhihu            : # Username
 
-# Publication Category - The following the list of publication categories and their headings
-publication_category:
-  books:
-    title: '단행본'
-  manuscripts:
-    title: '학술지 논문'
-  conferences:
-    title: '학술대회 논문'
-
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
 breadcrumbs              : false # true, false (default)
@@ -188,6 +179,7 @@ exclude:
   - log
   - node_modules
   - package.json*
+  - plans
   - Rakefile
   - README
   - tmp
@@ -219,13 +211,6 @@ kramdown:
   enable_coderay: false
 
 
-# These settings control the types of collections used by the template
-collections:
-  publications:
-    output: true
-    permalink: /:collection/:path/
-
-
 # These settings control how pages and collections are included in the site
 defaults:
   # _pages
@@ -235,17 +220,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _publications
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: single
-      author_profile: true
-      share: false
-      comments: false
-
-
 # Sass/SCSS
 sass:
   sass_dir: _sass
