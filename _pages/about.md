@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "소개"
+title: "About"
 author_profile: true
 redirect_from:
   - /about/
@@ -9,58 +9,47 @@ redirect_from:
   - /resume
 ---
 
-## 연구 프로필
+## Research Profile
 
-저는 인간의 움직임과 근육 사이의 관계에 관심이 있습니다. 생체역학적
-움직임을 관찰하는 데서 나아가, 중추신경계의 운동 명령이 근육 활동을
-어떻게 조절하는지 연구하고자 합니다.
+I am interested in the relationship between human movement and muscles. Beyond observing biomechanical movement, I aim to study how the motor commands of the central nervous system regulate muscle activity.
 
-다채널 근전도와 NMF 기반 근육 시너지 분석을 활용하여 걷기와 달리기 같은
-반복 동작, 예상치 못한 외란 상황에서 나타나는 근육 협응과 자세 제어 반응을
-살펴봅니다.
+Using multi-channel electromyography (EMG) and NMF-based muscle synergy analysis, I examine muscle coordination and postural control responses that emerge during repetitive movements such as walking, squatting and running, as well as under unexpected perturbations.
 
-## 학력
+## Education
 
-- [청주대학교 스포츠재활학과 홈페이지](https://www.cju.ac.kr/sptrehab/index.do),
-  스포츠의학과 석사과정, 2025–2027 예정
-  - 지도교수: [김유신 교수 — Google Scholar](https://scholar.google.co.kr/citations?user=hdV_QJMAAAAJ&hl=en)
-- [한양대학교 ERICA 스포츠코칭 전공 홈페이지](http://sportsnarts.hanyang.ac.kr/en/sport/),
-  2019–2025
+- [Cheongju University, Dept. of Sports Rehabilitation](https://www.cju.ac.kr/sptrehab/index.do), M.S. in Sports Medicine, 2025–2027(expected)
+  - Advisor: [Prof. Yushin Kim](https://scholar.google.co.kr/citations?user=hdV_QJMAAAAJ&hl=en)
+- [Hanyang University ERICA, Sports Coaching Major](http://sportsnarts.hanyang.ac.kr/en/sport/), 2019–2025
 
-## 연구 관심 분야
+## Research Interests
 
-- 걷기와 달리기에서 나타나는 근육 협응 패턴
-- 예상치 못한 외란 상황에서 나타나는 생체역학적 반응과 근육 협응
-- NMF 기반 근육 시너지 분석을 이용한 다채널 근전도 신호 해석
-- 근육 공동활성화와 선행적 자세 반응
+- Muscle coordination patterns in walking and running
+- Biomechanical responses and muscle coordination under unexpected perturbations
+- Interpretation of multi-channel EMG signals using NMF-based muscle synergy analysis
+- Muscle co-activation and anticipatory postural responses
 
-## 연구 활동
+## Research Activities
 
-### 석사 과정
+### Master's
 
-- 젊은 성인과 노인이 자유로운 환경에서 예상치 못한 외란에 반응할 때
-  나타나는 차이를 stepping과 nonstepping 반응을 중심으로 분석
-- 뇌병변 환자의 보행에서 나타나는 근육 협응 구조를 근육 시너지 분석으로
-  분석
-- 청소 카트 유형에 따라 하지와 허리에서 나타나는 근육 협응 패턴 분석
+- Analyzing differences between young and older adults in their responses to unexpected perturbations in unconstrained environments, focusing on stepping and non-stepping responses
+- Analyzing muscle coordination structures in the gait of patients with brain lesions using muscle synergy analysis
+- Effects of Biomechanical Improvements in Manual Handling Equipment on Users’ Muscle Activations
 
-### 학부 과정
+### Undergraduate
 
-- Clean & jerk 역도 동작의 운동기술 학습 관찰
-- 골프 스윙 전 워밍업 여부에 따른 수행력 관찰
+- Observing motor-skill learning in the clean & jerk weightlifting movement
+- Observing performance depending on whether a warm-up was performed before a golf swing
 
-## 기타 활동
+## Other Activities
 
-- 노인 대상 낙상 방지 교육 강사, 2025
-  - 질병관리청 주관·중앙손상관리센터(고려대학교 안암병원 운영)의
-    「2025 노인낙상예방 전문강사 양성과정(BASIC)」 참여
-  - 청주대학교 스포츠재활학과 실습 과정에서 균형 평가·하지 강화 등
-    낙상예방 운동을 시연·지도하고, 실제 어르신 대상 예방 교육 진행
-    ([관련 보도](https://www.sisanews.org/articles/224088838594))
+- Fall-prevention instructor for older adults, 2025
+  - Participated in the "2025 Fall Prevention Specialist Instructor Training Course (BASIC)," organized by the Korea Disease Control and Prevention Agency and the National Injury Management Center (operated by Korea University Anam Hospital)
+  - Demonstrated and instructed fall-prevention exercises such as balance assessment and lower-limb strengthening as part of the practicum in Cheongju University's Dept. of Sports Rehabilitation, and conducted prevention education for actual older adults ([related coverage](https://www.sisanews.org/articles/224088838594))
 
-  ![낙상예방 운동 시연](../images/fall-prevention-demo.jpg){: style="width:30%"}
+  ![Fall-prevention exercise demonstration](../images/fall-prevention-demo.jpg){: style="width:30%"}
 
-## 관심 활동
+## Hobbies
 
-- 기계체조
-- 웨이트 트레이닝
+- Artistic gymnastics
+- Weight training
