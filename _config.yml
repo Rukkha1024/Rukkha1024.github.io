@@ -7,12 +7,12 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "ko-KR"
+locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "조민석 | Academic Résumé"
+title                    : "조민석 (Minseok Cho) | Academic Résumé"
 title_separator          : "-"
-name                     : &name "조민석"
-description              : &description "근육 협응과 신경근 제어를 연구하는 조민석의 학술 résumé"
+name                     : &name "조민석 (Minseok Cho)"
+description              : &description "Academic résumé of Minseok Cho, studying muscle coordination and neuromuscular control"
 url                      : "https://rukkha1024.github.io" # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "조민석 (Minseok Cho)"
   pronouns         : # example: "she/her"
-  bio              : "근육 협응과 신경근 제어를 연구합니다."
+  bio              : "I study muscle coordination and neuromuscular control."
   location         :
   employer         :
   uri              : # URL

@@ -1,6 +1,6 @@
 main:
-  - title: "소개"
+  - title: "About"
     url: /
 
-  - title: "논문"
+  - title: "Publications"
     url: /publications/

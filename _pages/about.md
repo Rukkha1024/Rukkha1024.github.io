@@ -44,8 +44,8 @@ Using multi-channel electromyography (EMG) and NMF-based muscle synergy analysis
 ## Other Activities
 
 - Fall-prevention instructor for older adults, 2025
-  - Participated in the "2025 Fall Prevention Specialist Instructor Training Course (BASIC)," organized by the Korea Disease Control and Prevention Agency and the National Injury Management Center (operated by Korea University Anam Hospital)
-  - Demonstrated and instructed fall-prevention exercises such as balance assessment and lower-limb strengthening as part of the practicum in Cheongju University's Dept. of Sports Rehabilitation, and conducted prevention education for actual older adults ([related coverage](https://www.sisanews.org/articles/224088838594))
+  - Participated in the "2025 Fall Prevention Specialist Instructor Training Course (BASIC)," organized by the "Korea Disease Control and Prevention Agency" and the "National Injury Management Center" (operated by "Korea University")
+  - Demonstrated and instructed fall-prevention exercises such as balance assessment and lower-limb strengthening as part of the practicum in "Cheongju University's Dept. of Sports Rehabilitation", and conducted prevention education for actual older adults ([related coverage](https://www.sisanews.org/articles/224088838594))
 
   ![Fall-prevention exercise demonstration](../images/fall-prevention-demo.jpg){: style="width:30%"}
 
@@ -53,3 +53,4 @@ Using multi-channel electromyography (EMG) and NMF-based muscle synergy analysis
 
 - Artistic gymnastics
 - Weight training
+- AI vibe coding
