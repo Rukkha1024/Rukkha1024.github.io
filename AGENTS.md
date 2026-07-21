@@ -34,3 +34,6 @@
 - `_pages/publications.md`: 전체 논문 목록과 영어 3줄 요약.
 - `_data/navigation.yml`: 상단 메뉴.
 - `_includes/`, `_layouts/`, `_sass/`, `assets/`: 테마 코어. 디자인 변경 외 수정 금지.
+
+# user info 
+user는 github io를 다룰 줄 모른다. 따라서 user가 명시하지 않는 한, 수정사항은 github io의 완성본을 수정해달라고 이해하면 된다. 

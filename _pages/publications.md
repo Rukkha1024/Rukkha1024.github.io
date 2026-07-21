@@ -8,11 +8,10 @@ redirect_from:
   - /publication/2025-12-31-manual-handling-equipment
 ---
 
-## 학술지 논문
+## Journal
 
 ### [Effects of Biomechanical Improvements in Manual Handling Equipment on Users’ Muscle Activations](https://doi.org/10.24332/aospt.2025.21.2.12)
 
-*Archives of Orthopedic and Sports Physical Therapy* 게재, 2025
 
 - Compares trunk and lower-limb muscle activation in 28 healthy adults who
   performed pushing, pulling, and lifting tasks with a 20-kg load.
@@ -22,14 +21,10 @@ redirect_from:
 - Indicates that an extended adjustable handle may reduce muscular and
   musculoskeletal demands during industrial manual handling.
 
-권장 인용: Minseok Cho, DaHoon Park, Ui Yeol Yoon, Jiyeon Yuk, Yushin Kim.
-(2025). Effects of Biomechanical Improvements in Manual Handling Equipment on
-Users’ Muscle Activations. Archives of Orthopedic and Sports Physical Therapy,
-21(2), 119–129.
+> Minseok Cho, DaHoon Park, Ui Yeol Yoon, Jiyeon Yuk, Yushin Kim.(2025). Effects of Biomechanical Improvements in Manual Handling Equipment on Users’ Muscle Activations. Archives of Orthopedic and Sports Physical Therapy, 21(2), 119–129.
 
 ### [Muscle Synergy Analysis for Identifying Muscle Coordination Patterns: A Non-negative Matrix Factorization (NMF)-Based Case Study](https://doi.org/10.24332/aospt.2025.21.1.04)
 
-*Archives of Orthopedic and Sports Physical Therapy* 게재, 2025
 
 - Presents a practical framework that uses non-negative matrix factorization
   to decompose EMG signals into muscle synergies and variance accounted for to
@@ -39,7 +34,4 @@ Users’ Muscle Activations. Archives of Orthopedic and Sports Physical Therapy,
 - Uses five proportional, inverse, and independent signal patterns to
   illustrate muscle coordination in sports and clinical settings.
 
-권장 인용: Minseok Cho, Dahoon Park, Yushin Kim. (2025). Muscle Synergy
-Analysis for Identifying Muscle Coordination Patterns: A Non-negative Matrix
-Factorization (NMF)-Based Case Study. Archives of Orthopedic and Sports Physical
-Therapy, 21(1), 31–43.
+> Minseok Cho, Dahoon Park, Yushin Kim. (2025). Muscle Synergy Analysis for Identifying Muscle Coordination Patterns: A Non-negative Matrix Factorization (NMF)-Based Case Study. Archives of Orthopedic and Sports Physical Therapy, 21(1), 31–43.
