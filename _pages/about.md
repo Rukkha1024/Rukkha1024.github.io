@@ -45,11 +45,13 @@ Using multi-channel electromyography (EMG) and NMF-based muscle synergy analysis
 
 ## Other Activities
 
-- Fall-prevention instructor for older adults, 2025
+- Fall-prevention exercise curriculum co-author & instructor for older adults, 2025
+  - Co-authored the fall-prevention exercise teaching materials, used in both the specialist instructor training course and the older-adult education program, and taught as an instructor
   - Participated in the "2025 Fall Prevention Specialist Instructor Training Course (BASIC)," organized by the "Korea Disease Control and Prevention Agency" and the "National Injury Management Center" (operated by "Korea University")
-  - Demonstrated and instructed fall-prevention exercises such as balance assessment and lower-limb strengthening as part of the practicum in "Cheongju University's Dept. of Sports Rehabilitation", and conducted prevention education for actual older adults ([related coverage](https://www.sisanews.org/articles/224088838594))
+  - Demonstrated and instructed fall-prevention exercises such as balance assessment and lower-limb strengthening as part of the practicum in "Cheongju University's Dept. of Sports Rehabilitation", and conducted prevention education for actual older adults ([related news](https://www.sisanews.org/articles/224088838594))
 
-  ![Fall-prevention exercise demonstration](../images/fall-prevention-demo.jpg){: style="width:30%"}
+  ![The author demonstrating a fall-prevention exercise, featured in the course teaching materials](../images/fall-prevention-demo.jpg){: style="width:30%"}
+  *Featured in the teaching materials I co-authored.*
 
 ## Hobbies
 
