@@ -15,19 +15,11 @@ I am interested in how muscles coordinate to produce human movement. Beyond desc
 
 Using multi-channel electromyography (EMG) and NMF-based muscle synergy analysis, I examine how muscle coordination and postural control adapt during repetitive tasks and in response to unexpected perturbations.
 
-## Education
-
-- [Cheongju University, Dept. of Sports Rehabilitation](https://www.cju.ac.kr/sptrehab/index.do), M.S. in Sports Medicine, 2025–2027 (expected)
-  - Advisor: [Prof. Yushin Kim](https://scholar.google.co.kr/citations?user=hdV_QJMAAAAJ&hl=en)
-- [Hanyang University ERICA, Sports Coaching Major](http://sportsnarts.hanyang.ac.kr/en/sport/), 2019–2025
-
 ## Skills / Methods
 
-- Multi-channel electromyography (EMG)
-- NMF-based muscle-synergy analysis
-- Biomechanical signal processing
-- Python for data analysis and automated reporting
-- Statistical analysis
+- Electromyography (EMG) & Biomechanical analysis  
+- NMF muscle-synergy analysis
+- Python coding for data analysis and automated work
 
 ## Research Interests
 
@@ -35,6 +27,12 @@ Using multi-channel electromyography (EMG) and NMF-based muscle synergy analysis
 - Biomechanical responses and muscle coordination under unexpected perturbations
 - Interpretation of multi-channel EMG signals using NMF-based muscle synergy analysis
 - Muscle co-activation and anticipatory postural responses
+
+## Education
+
+- [Cheongju University, Dept. of Sports Rehabilitation](https://www.cju.ac.kr/sptrehab/index.do), M.S. in Sports Medicine, 2025–2027 (expected)
+  - Advisor: [Prof. Yushin Kim](https://scholar.google.co.kr/citations?user=hdV_QJMAAAAJ&hl=en)
+- [Hanyang University ERICA, Sports Coaching Major](http://sportsnarts.hanyang.ac.kr/en/sport/), 2019–2025
 
 ## Research Activities
 
