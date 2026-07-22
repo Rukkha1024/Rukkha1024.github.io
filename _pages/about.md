@@ -51,7 +51,7 @@ Using multi-channel electromyography (EMG) and NMF-based muscle synergy analysis
   - Demonstrated and instructed fall-prevention exercises such as balance assessment and lower-limb strengthening as part of the practicum in "Cheongju University's Dept. of Sports Rehabilitation", and conducted prevention education for actual older adults ([related news](https://www.sisanews.org/articles/224088838594))
 
   ![The author demonstrating a fall-prevention exercise, featured in the course teaching materials](../images/fall-prevention-demo.jpg){: style="width:30%"}
-  *Featured in the teaching materials I co-authored.*
+  *Featured in the co-authored teaching materials.*
 
 ## Hobbies
 
