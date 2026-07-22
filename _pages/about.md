@@ -36,11 +36,11 @@ Using multi-channel electromyography (EMG) and NMF-based muscle synergy analysis
   - Built an [automated fall-risk assessment & reporting system](https://github.com/Rukkha1024/elderly-balance-assessment-public) that grades fall risk from experimental data (TUG, gait, one-leg-standing, questionnaires) and auto-generates each participant's individual PDF report
   - Building on this dataset, analyzing differences between young and older adults in their responses to unexpected perturbations in unconstrained environments, focusing on stepping and non-stepping responses
 - Analyzing muscle coordination structures in the gait of patients with brain lesions using muscle synergy analysis
-- Effects of Biomechanical Improvements in Manual Handling Equipment on Users’ Muscle Activations
+- Effects of Biomechanical Improvements in Manual Handling Equipment on Users’ Muscle Activations[*](https://doi.org/10.24332/aospt.2025.21.2.12)
 
 ### Undergraduate (2019-2025)
 
-- Observing motor-skill learning in the clean & jerk weightlifting movement
+- Observing motor-skill learning in the clean & jerk weightlifting movement[*](https://github.com/Rukkha1024/Clean-Jerk-Improvement-after-3-Weeks-of-Training)
 - Observing performance depending on whether a warm-up was performed before a golf swing
 
 ## Other Activities
