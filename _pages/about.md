@@ -38,7 +38,7 @@ Using multi-channel electromyography (EMG) and NMF-based muscle synergy analysis
 
 ### Master's (2025-2027)
 
-- Conducted biomechanics experiments with community-dwelling older adults in Cheongju: recruited participants, delivered an individualized fall-risk assessment report to each participant, and taught tailored fall-prevention exercise programs based on the results
+- Conducted biomechanics experiments with 33 young adults and 40 community-dwelling older adults in Cheongju; for the older-adult cohort, recruited participants, delivered an individualized fall-risk assessment report to each participant, and taught tailored fall-prevention exercise programs based on the results
   - Built an [automated fall-risk assessment & reporting system](https://github.com/Rukkha1024/elderly-balance-assessment-public) that grades fall risk from experimental data (TUG, gait, one-leg-standing, questionnaires) and auto-generates each participant's PDF report
   - Building on this dataset, analyzing how young and older adults differ in their responses to unexpected perturbations in unconstrained environments, focusing on stepping vs. non-stepping strategies
 - Analyzing muscle coordination structures in the gait of patients with brain lesions using muscle synergy analysis
