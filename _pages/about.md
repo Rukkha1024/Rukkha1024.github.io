@@ -9,24 +9,24 @@ redirect_from:
   - /resume
 ---
 
-## Research Profile
+## Research
 
 I am interested in how muscles coordinate to produce human movement. Beyond describing movement itself, I aim to study how motor commands from the central nervous system regulate muscle activity.
 
 Using multi-channel electromyography (EMG) and NMF-based muscle synergy analysis, I examine how muscle coordination and postural control adapt during repetitive tasks and in response to unexpected perturbations.
+
+Directions I want to take further:
+
+- Measuring what surface EMG cannot reach — deep and trunk muscles, and activity closer to the motor-unit level
+- Synthetic EMG and neuromusculoskeletal digital twins linking neural drive, motor units, and muscle force
+- Subject-specific models that prescribe, not just describe, what an individual should change
+- Muscle coordination with anticipatory postural responses
 
 ## Skills / Methods
 
 - EMG, motion capture, and force-plate data collection and analysis (16-channel wireless EMG (Delsys), 14-camera Motive, 4 force plates)
 - NMF muscle-synergy analysis
 - Python for data analysis, processing pipelines, and automation
-
-## Research Interests
-
-- Measuring what surface EMG cannot reach — deep and trunk muscles, and activity closer to the motor-unit level
-- Synthetic EMG and neuromusculoskeletal digital twins linking neural drive, motor units, and muscle force
-- Subject-specific models that prescribe, not just describe, what an individual should change
-- Muscle coordination with anticipatory postural responses
 
 ## Education
 
