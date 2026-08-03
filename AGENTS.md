@@ -11,7 +11,7 @@
 
 - 경력, 학력, 논문, 연구 내용 임의 생성 금지.
 - 불확실한 정보는 사용자에게 확인.
-- 공개 résumé는 한국어로 작성.
+- 공개 résumé는 영어로 작성. README 등 편집 안내 문서는 한국어 유지.
 - 일반 콘텐츠는 Markdown으로 관리. HTML 직접 편집 금지.
 - GitHub 웹 편집과 GitHub Pages 배포 기준.
 - 로컬 Docker·Ruby 환경 만들지 않음.
@@ -37,3 +37,4 @@
 
 # user info 
 user는 github io를 다룰 줄 모른다. 따라서 user가 명시하지 않는 한, 수정사항은 github io의 완성본을 수정해달라고 이해하면 된다. 
+always commit and push without user confirmation.

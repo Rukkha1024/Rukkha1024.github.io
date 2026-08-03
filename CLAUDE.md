@@ -37,3 +37,4 @@
 
 # user info 
 user는 github io를 다룰 줄 모른다. 따라서 user가 명시하지 않는 한, 수정사항은 github io의 완성본을 수정해달라고 이해하면 된다. 
+always commit and push without user confirmation.
