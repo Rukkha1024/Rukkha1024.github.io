@@ -25,6 +25,7 @@ Using multi-channel electromyography (EMG) and NMF-based muscle synergy analysis
 
 - Measuring what surface EMG cannot reach — deep and trunk muscles, and activity closer to the motor-unit level
 - Synthetic and virtual neuromuscular datasets linking neural drive, motor units, and EMG
+- Models that prescribe what a specific person should change, not only describe what they did
 - Muscle coordination with anticipatory postural responses
 
 ## Education
