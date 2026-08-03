@@ -17,22 +17,21 @@ Using multi-channel electromyography (EMG) and NMF-based muscle synergy analysis
 
 ## Skills / Methods
 
-- Electromyography (EMG) & Biomechanical analysis  
+- EMG, motion capture, and force-plate data collection and analysis (16-channel wireless EMG (Delsys), 14-camera Motive, 4 force plates)
 - NMF muscle-synergy analysis
-- Python coding for data analysis and automated work
+- Python for data analysis, processing pipelines, and automation
 
 ## Research Interests
 
-- Muscle coordination patterns in walking and running
-- Biomechanical responses and muscle coordination under unexpected perturbations
-- Interpretation of multi-channel EMG signals using NMF-based muscle synergy analysis
-- Muscle co-activation and anticipatory postural responses
+- Measuring what surface EMG cannot reach — deep and trunk muscles, and activity closer to the motor-unit level
+- Synthetic and virtual neuromuscular datasets linking neural drive, motor units, and EMG
+- Muscle coordination with anticipatory postural responses
 
 ## Education
 
 - [Cheongju University, Dept. of Sports Rehabilitation](https://www.cju.ac.kr/sptrehab/index.do), M.S. in Sports Medicine, 2025–2027 (expected)
   - Advisor: [Prof. Yushin Kim](https://scholar.google.co.kr/citations?user=hdV_QJMAAAAJ&hl=en)
-- [Hanyang University ERICA, Sports Coaching Major](http://sportsnarts.hanyang.ac.kr/en/sport/), 2019–2025
+- [Hanyang University ERICA, Sports Coaching Major](http://sportsnarts.hanyang.ac.kr/en/sport/), 2019–2025 (including two years of mandatory military service)
 
 ## Research Activities
 
@@ -40,8 +39,8 @@ Using multi-channel electromyography (EMG) and NMF-based muscle synergy analysis
 
 - Conducted biomechanics experiments with 33 young adults and 40 community-dwelling older adults in Cheongju; for the older-adult cohort, recruited participants, delivered an individualized fall-risk assessment report to each participant, and taught tailored fall-prevention exercise programs based on the results
   - Built an [automated fall-risk assessment & reporting system](https://github.com/Rukkha1024/elderly-balance-assessment-public) that grades fall risk from experimental data (TUG, gait, one-leg-standing, questionnaires) and auto-generates each participant's PDF report
-  - Building on this dataset, analyzing how young and older adults differ in their responses to unexpected perturbations in unconstrained environments, focusing on stepping vs. non-stepping strategies
-- Analyzing muscle coordination structures in the gait of patients with brain lesions using muscle synergy analysis
+  - Building on this dataset, analyzing how young and older adults differ in their responses to unexpected perturbations in unconstrained environments, focusing on stepping vs. non-stepping strategies (ongoing)
+- Analyzing muscle coordination structures in the gait of patients with brain lesions using muscle synergy analysis (ongoing)
 - Studied the effect of biomechanically improved manual-handling equipment on users’ muscle activation[*](https://doi.org/10.24332/aospt.2025.21.2.12)
 
 ### Undergraduate (2019-2025)
@@ -63,4 +62,3 @@ Using multi-channel electromyography (EMG) and NMF-based muscle synergy analysis
 
 - Artistic gymnastics
 - Weight training
-- AI vibe coding
