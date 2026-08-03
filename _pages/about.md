@@ -24,8 +24,8 @@ Using multi-channel electromyography (EMG) and NMF-based muscle synergy analysis
 ## Research Interests
 
 - Measuring what surface EMG cannot reach — deep and trunk muscles, and activity closer to the motor-unit level
-- Synthetic and virtual neuromuscular datasets linking neural drive, motor units, and EMG
-- Models that prescribe what a specific person should change, not only describe what they did
+- Synthetic EMG and neuromusculoskeletal digital twins linking neural drive, motor units, and muscle force
+- Subject-specific models that prescribe, not just describe, what an individual should change
 - Muscle coordination with anticipatory postural responses
 
 ## Education
