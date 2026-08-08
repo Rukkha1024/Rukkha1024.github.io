@@ -62,4 +62,4 @@ Directions I want to take further:
 ## Hobbies
 
 - Artistic gymnastics
-- Weight training
+- Gym-based strength & functional training
