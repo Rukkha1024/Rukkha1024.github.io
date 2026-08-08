@@ -62,4 +62,5 @@ Directions I want to take further:
 ## Hobbies
 
 - Artistic gymnastics
-- Gym-based strength & functional training
+- Strength & functional training
+- Workflow automation with Python
