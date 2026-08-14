@@ -1,6 +1,6 @@
 # Current master CV contract
 
-Contract version: `1.4`
+Contract version: `1.5`
 
 Update this current specification before every CV content, evidence, layout,
 DOCX, or PDF change. Increment the version without adding a historical log.
@@ -65,6 +65,9 @@ Use named override `academic_cv_master` derived from `compact_reference_guide`:
   is the only non-black/gray color.
 - No forced section page break: content flows naturally across the two pages,
   relying on keep-with-next to avoid orphaned headings.
+- Short labeled blocks (Technical Skills, Selected Research Software): chain
+  keep-with-next through every line except the block's last so the block never
+  splits across a page boundary.
 
 ## Render acceptance
 

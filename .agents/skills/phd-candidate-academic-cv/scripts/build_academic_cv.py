@@ -275,9 +275,9 @@ def build(data: dict[str, Any], output: Path) -> None:
             add_bullet(doc, bullet_text)
 
     add_section_heading(doc, "Technical Skills")
-    for item in data["skills"]:
+    for index, item in enumerate(data["skills"]):
         p = doc.add_paragraph()
-        set_spacing(p, after=1)
+        set_spacing(p, after=1, keep_with_next=index < len(data["skills"]) - 1)
         set_font(p.add_run(item["label"] + ": "), size=9.8, bold=True)
         set_font(p.add_run(item["text"]), size=9.8)
 
@@ -288,9 +288,9 @@ def build(data: dict[str, Any], output: Path) -> None:
             add_bullet(doc, bullet_text)
 
     add_section_heading(doc, "Selected Research Software")
-    for item in data["software"]:
+    for index, item in enumerate(data["software"]):
         p = doc.add_paragraph()
-        set_spacing(p, after=1.5)
+        set_spacing(p, after=1.5, keep_with_next=index < len(data["software"]) - 1)
         set_font(p.add_run(item["name"] + ": "), size=9.6, bold=True)
         add_hyperlink(p, item["display_url"], item["url"])
 
