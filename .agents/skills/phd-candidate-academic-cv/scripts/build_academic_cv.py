@@ -141,7 +141,7 @@ def configure_document(doc: Document, title: str, version: str) -> None:
     section_style.font.size = Pt(10.5)
     section_style.font.bold = True
     section_style.font.color.rgb = BLACK
-    section_style.paragraph_format.space_before = Pt(7)
+    section_style.paragraph_format.space_before = Pt(9)
     section_style.paragraph_format.space_after = Pt(2)
     section_style.paragraph_format.keep_with_next = True
 
@@ -248,7 +248,11 @@ def build(data: dict[str, Any], output: Path) -> None:
             doc, publication["citation"], data["name"], url=publication.get("url")
         )
 
-    add_section_heading(doc, "Research Experience")
+    add_section_heading(
+        doc,
+        "Research Experience",
+        page_break=data.get("page_break_before_section") == "Research Experience",
+    )
     for item in data["research_experience"]:
         add_entry_heading(doc, item["heading"], item["dates"])
         if item.get("subtitle"):

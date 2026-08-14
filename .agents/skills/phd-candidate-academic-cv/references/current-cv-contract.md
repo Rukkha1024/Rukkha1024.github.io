@@ -1,6 +1,6 @@
 # Current master CV contract
 
-Contract version: `1.0`
+Contract version: `1.1`
 
 Update this current specification before every CV content, evidence, layout,
 DOCX, or PDF change. Increment the version without adding a historical log.
@@ -51,15 +51,16 @@ Use named override `academic_cv_master` derived from `compact_reference_guide`:
 - Page: US Letter portrait; 1.0-inch margins; 0.492-inch header/footer distance.
 - Font: Arial; body 10.5 pt; black; single spacing; 0 pt before and 1.5 pt after.
 - Name: 17 pt bold; contact line: 9 pt; centered; no title rule.
-- Section heading: 10.5 pt bold, uppercase, black; 7 pt before, 2 pt after;
+- Section heading: 10.5 pt bold, uppercase, black; 9 pt before, 2 pt after;
   keep with next paragraph.
 - Entry title: 10.5 pt; institution/role bold; dates right-aligned with a real
   right tab stop.
 - Detail: 10 pt; bullets 9.6 pt with real Word bullet style, 0.18-inch marker,
   0.36-inch text indent, 1.5 pt after.
 - No tables, columns, sidebars, shaded blocks, icons, or color accents.
-- Use one deliberate page break only when needed to maintain the two-page
-  budget and preserve logical section grouping.
+- Use one deliberate page break before `Research Experience`. Keep profile,
+  education, and publications on page one; keep research experience, skills,
+  engagement, and software on page two.
 
 ## Render acceptance
 
