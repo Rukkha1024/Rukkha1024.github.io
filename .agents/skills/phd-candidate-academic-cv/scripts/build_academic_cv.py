@@ -21,6 +21,8 @@ SKILL_ROOT = Path(__file__).resolve().parents[1]
 CONTRACT_PATH = SKILL_ROOT / "references" / "current-cv-contract.md"
 BLACK = RGBColor(0, 0, 0)
 MUTED = RGBColor(65, 65, 65)
+NAVY = RGBColor(0x1F, 0x38, 0x64)
+NAVY_HEX = "1F3864"
 
 
 def contract_version() -> str:
@@ -74,10 +76,8 @@ def add_hyperlink(paragraph: Any, text: str, url: str) -> None:
     paragraph._element.append(hyperlink)
 
 
-def add_section_heading(doc: Document, label: str, *, page_break: bool = False) -> None:
+def add_section_heading(doc: Document, label: str) -> None:
     p = doc.add_paragraph(style="CV Section")
-    if page_break:
-        p.paragraph_format.page_break_before = True
     p.add_run(label.upper())
 
 
@@ -140,10 +140,28 @@ def configure_document(doc: Document, title: str, version: str) -> None:
     section_style.font.name = "Arial"
     section_style.font.size = Pt(10.5)
     section_style.font.bold = True
-    section_style.font.color.rgb = BLACK
-    section_style.paragraph_format.space_before = Pt(9)
-    section_style.paragraph_format.space_after = Pt(2)
+    section_style.font.color.rgb = NAVY
+    section_style.paragraph_format.space_before = Pt(10)
+    section_style.paragraph_format.space_after = Pt(3)
     section_style.paragraph_format.keep_with_next = True
+    # 1 pt letter spacing (w:spacing is in twentieths of a point).
+    section_rpr = section_style.element.get_or_add_rPr()
+    spacing = section_rpr.makeelement(qn("w:spacing"), {qn("w:val"): "20"})
+    section_rpr.append(spacing)
+    # 0.75 pt navy bottom rule (w:sz is in eighths of a point).
+    section_ppr = section_style.element.get_or_add_pPr()
+    pbdr = section_ppr.makeelement(qn("w:pBdr"), {})
+    bottom = section_ppr.makeelement(
+        qn("w:bottom"),
+        {
+            qn("w:val"): "single",
+            qn("w:sz"): "6",
+            qn("w:space"): "2",
+            qn("w:color"): NAVY_HEX,
+        },
+    )
+    pbdr.append(bottom)
+    section_ppr.append(pbdr)
 
     entry = styles.add_style("CV Entry", WD_STYLE_TYPE.PARAGRAPH)
     entry.base_style = normal
@@ -218,7 +236,7 @@ def build(data: dict[str, Any], output: Path) -> None:
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     set_spacing(p, after=1)
-    set_font(p.add_run(data["name"].upper()), size=17, bold=True)
+    set_font(p.add_run(data["name"].upper()), size=20, bold=True, color=NAVY)
 
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -248,11 +266,7 @@ def build(data: dict[str, Any], output: Path) -> None:
             doc, publication["citation"], data["name"], url=publication.get("url")
         )
 
-    add_section_heading(
-        doc,
-        "Research Experience",
-        page_break=data.get("page_break_before_section") == "Research Experience",
-    )
+    add_section_heading(doc, "Research Experience")
     for item in data["research_experience"]:
         add_entry_heading(doc, item["heading"], item["dates"])
         if item.get("subtitle"):
@@ -260,11 +274,7 @@ def build(data: dict[str, Any], output: Path) -> None:
         for bullet_text in item["bullets"]:
             add_bullet(doc, bullet_text)
 
-    add_section_heading(
-        doc,
-        "Technical Skills",
-        page_break=data.get("page_break_before_section") == "Technical Skills",
-    )
+    add_section_heading(doc, "Technical Skills")
     for item in data["skills"]:
         p = doc.add_paragraph()
         set_spacing(p, after=1)

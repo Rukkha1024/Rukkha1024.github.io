@@ -1,6 +1,6 @@
 # Current master CV contract
 
-Contract version: `1.3`
+Contract version: `1.4`
 
 Update this current specification before every CV content, evidence, layout,
 DOCX, or PDF change. Increment the version without adding a historical log.
@@ -49,18 +49,22 @@ codes, and full street address.
 Use named override `academic_cv_master` derived from `compact_reference_guide`:
 
 - Page: US Letter portrait; 1.0-inch margins; 0.492-inch header/footer distance.
+- Accent color: deep navy `#1F3864` for the name, section headings, and section
+  rules only. All other text is black or the muted gray below.
 - Font: Arial; body 10.5 pt; black; single spacing; 0 pt before and 1.5 pt after.
-- Name: 17 pt bold; contact line: 9 pt; centered; no title rule.
-- Section heading: 10.5 pt bold, uppercase, black; 9 pt before, 2 pt after;
-  keep with next paragraph.
-- Entry title: 10.5 pt; institution/role bold; dates right-aligned with a real
-  right tab stop.
+- Name: 20 pt bold, navy, centered; contact line: 9 pt, muted gray `#414141`,
+  centered; no rule under the identity block.
+- Section heading: 10.5 pt bold, uppercase, navy, 1 pt letter spacing; a 0.75 pt
+  navy bottom rule spanning the text column; 10 pt before, 3 pt after; keep with
+  next paragraph.
+- Entry title: 10.5 pt; institution/role bold black; dates right-aligned with a
+  real right tab stop in muted gray.
 - Detail: 10 pt; bullets 9.6 pt with real Word bullet style, 0.18-inch marker,
   0.36-inch text indent, 1.5 pt after.
-- No tables, columns, sidebars, shaded blocks, icons, or color accents.
-- Use one deliberate page break before `Research Experience`. Keep profile,
-  education, and publications on page one; keep research experience, skills,
-  engagement, and software on page two.
+- No tables, columns, sidebars, shaded blocks, or icons; the navy accent above
+  is the only non-black/gray color.
+- No forced section page break: content flows naturally across the two pages,
+  relying on keep-with-next to avoid orphaned headings.
 
 ## Render acceptance
 
