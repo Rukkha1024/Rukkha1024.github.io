@@ -1,0 +1,4 @@
+interface:
+  display_name: "PhD Academic CV"
+  short_description: "Build and audit a private graduate application CV"
+  default_prompt: "Use $phd-candidate-academic-cv to update my private academic CV from verified evidence."

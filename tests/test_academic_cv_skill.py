@@ -11,13 +11,14 @@ from docx import Document
 
 ROOT = Path(__file__).resolve().parents[1]
 SKILL = ROOT / ".agents/skills/phd-candidate-academic-cv"
+CLAUDE_SKILL = ROOT / ".claude/skills/phd-candidate-academic-cv"
 BUILD = SKILL / "scripts/build_academic_cv.py"
 AUDIT = SKILL / "scripts/audit_academic_cv.py"
 
 
 def sample_source() -> dict:
     return {
-        "contract_version": "1.2",
+        "contract_version": "1.3",
         "mode": "draft",
         "name": "Sample Applicant",
         "contact": {
@@ -80,8 +81,25 @@ class AcademicCVSkillTests(unittest.TestCase):
         contract = (SKILL / "references/current-cv-contract.md").read_text(encoding="utf-8")
         self.assertIn("Update `current-cv-contract.md` before changing any CV", skill)
         self.assertIn("Require a 4.0-scale GPA result", contract)
-        self.assertIn("Contract version: `1.2`", contract)
+        self.assertIn("Contract version: `1.3`", contract)
         self.assertIn("--output files/Minseok_Cho_Academic_CV_Draft.docx", skill)
+
+    def test_claude_skill_mirror_is_byte_identical(self) -> None:
+        canonical_files = sorted(
+            path.relative_to(SKILL) for path in SKILL.rglob("*") if path.is_file()
+        )
+        mirror_files = sorted(
+            path.relative_to(CLAUDE_SKILL)
+            for path in CLAUDE_SKILL.rglob("*")
+            if path.is_file()
+        )
+        self.assertEqual(canonical_files, mirror_files)
+        for relative_path in canonical_files:
+            self.assertEqual(
+                (SKILL / relative_path).read_bytes(),
+                (CLAUDE_SKILL / relative_path).read_bytes(),
+                relative_path.as_posix(),
+            )
 
     def test_build_and_audit_draft(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -100,7 +118,7 @@ class AcademicCVSkillTests(unittest.TestCase):
             doc = Document(output)
             self.assertEqual(
                 doc.core_properties.identifier,
-                "phd-candidate-academic-cv-contract:1.2",
+                "phd-candidate-academic-cv-contract:1.3",
             )
             self.assertNotIn("PRIVATE-STUDENT-ID", "\n".join(p.text for p in doc.paragraphs))
 
