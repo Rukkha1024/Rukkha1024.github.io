@@ -17,7 +17,7 @@ AUDIT = SKILL / "scripts/audit_academic_cv.py"
 
 def sample_source() -> dict:
     return {
-        "contract_version": "1.1",
+        "contract_version": "1.2",
         "mode": "draft",
         "name": "Sample Applicant",
         "contact": {
@@ -80,7 +80,8 @@ class AcademicCVSkillTests(unittest.TestCase):
         contract = (SKILL / "references/current-cv-contract.md").read_text(encoding="utf-8")
         self.assertIn("Update `current-cv-contract.md` before changing any CV", skill)
         self.assertIn("Require a 4.0-scale GPA result", contract)
-        self.assertIn("Contract version: `1.1`", contract)
+        self.assertIn("Contract version: `1.2`", contract)
+        self.assertIn("--output files/Minseok_Cho_Academic_CV_Draft.docx", skill)
 
     def test_build_and_audit_draft(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -99,7 +100,7 @@ class AcademicCVSkillTests(unittest.TestCase):
             doc = Document(output)
             self.assertEqual(
                 doc.core_properties.identifier,
-                "phd-candidate-academic-cv-contract:1.1",
+                "phd-candidate-academic-cv-contract:1.2",
             )
             self.assertNotIn("PRIVATE-STUDENT-ID", "\n".join(p.text for p in doc.paragraphs))
 

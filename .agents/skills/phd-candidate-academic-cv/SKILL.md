@@ -35,7 +35,7 @@ this skill and its applicant values in an ignored task-local JSON file.
    uv run --with python-docx \
      .agents/skills/phd-candidate-academic-cv/scripts/build_academic_cv.py \
      --input local/cv/academic_cv_source.json \
-     --output local/cv/Minseok_Cho_Academic_CV_Draft.docx
+     --output files/Minseok_Cho_Academic_CV_Draft.docx
    ```
 
 5. Audit the DOCX before conversion:
@@ -43,7 +43,7 @@ this skill and its applicant values in an ignored task-local JSON file.
    ```bash
    uv run --with python-docx --with pypdf \
      .agents/skills/phd-candidate-academic-cv/scripts/audit_academic_cv.py \
-     --docx local/cv/Minseok_Cho_Academic_CV_Draft.docx \
+     --docx files/Minseok_Cho_Academic_CV_Draft.docx \
      --source local/cv/academic_cv_source.json
    ```
 
@@ -52,12 +52,14 @@ this skill and its applicant values in an ignored task-local JSON file.
    glyphs, or awkward page break remains.
 7. Export the approved DOCX to PDF. Never author an independent PDF. Render and
    inspect every PDF page, then audit both files together with `--pdf`.
-8. Deliver only the private DOCX and PDF. Do not commit them or their evidence.
+8. Deliver only the private DOCX and PDF from `files/`. Verify both remain
+   ignored. Do not commit them or their evidence.
 
 ## Protect the boundary
 
-- Keep outputs under `local/cv/`; keep transcripts, enrollment certificates,
-  degree certificates, and GPA evaluations ignored.
+- Keep the ignored source JSON under `local/cv/`. Keep DOCX and PDF outputs
+  under `files/` with explicit ignore rules. Keep transcripts, enrollment
+  certificates, degree certificates, and GPA evaluations ignored.
 - Exclude date of birth, gender, student IDs, certificate numbers, QR codes,
   full street addresses, photos, and source-document metadata.
 - Remove creator and last-modified-by metadata while retaining the nonpersonal

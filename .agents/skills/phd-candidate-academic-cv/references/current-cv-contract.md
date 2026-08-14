@@ -1,6 +1,6 @@
 # Current master CV contract
 
-Contract version: `1.1`
+Contract version: `1.2`
 
 Update this current specification before every CV content, evidence, layout,
 DOCX, or PDF change. Increment the version without adding a historical log.
@@ -11,7 +11,7 @@ DOCX, or PDF change. Increment the version without adding a historical log.
 - Privacy: private and ignored; never publish through GitHub Pages.
 - Draft basename: `Minseok_Cho_Academic_CV_Draft`.
 - Final basename: `Minseok_Cho_Academic_CV_Master`.
-- Output directory: `local/cv/`.
+- Output directory: `files/`; DOCX and PDF stay Git-ignored.
 - Page budget: exactly two US Letter pages.
 - Sequence: instruction -> source JSON -> DOCX -> rendered PNG QA -> PDF ->
   rendered PNG QA.

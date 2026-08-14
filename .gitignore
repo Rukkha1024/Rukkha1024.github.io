@@ -28,10 +28,12 @@ resume.md
 # Keep large lecture source material (PPTX) local; only optimized images ship.
 *.pptx
 
-# Keep private academic records and application CV artifacts local.
+# Keep private academic records and application CV artifacts out of GitHub Pages.
 files/*성적증명서*.pdf
 files/*재학증명서*.pdf
 files/*졸업증명서*.pdf
 files/*학위증명서*.pdf
 files/*GPA*.pdf
 files/*gpa*.pdf
+files/Minseok_Cho_Academic_CV_*.docx
+files/Minseok_Cho_Academic_CV_*.pdf

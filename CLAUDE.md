@@ -25,7 +25,7 @@
 - 기존 스타일 유지. 최소 범위만 수정.
 - Academic CV 작업: `.agents/skills/phd-candidate-academic-cv/` 먼저 읽고 수정.
 - CV 수정: skill의 current contract 먼저 수정. CV 단독 수정 금지.
-- CV·성적표·증명서: `local/` 또는 ignore 경로만 사용. 공개 금지.
+- CV 입력·증명서: `local/` 또는 ignore 경로만 사용. CV 산출물: ignore된 `files/`. 공개 금지.
 - instruction 파일은 caveman 문체 사용.
 - 작업 완료 후 변경 파일만 한국어 메시지로 커밋·push.
 
@@ -37,7 +37,8 @@
 - `_pages/publications.md`: 전체 논문 목록과 영어 3줄 요약.
 - `_data/navigation.yml`: 상단 메뉴.
 - `.agents/skills/phd-candidate-academic-cv/`: 비공개 대학원 지원 CV instruction·생성·검증.
-- `local/cv/`: 비공개 CV 입력·DOCX·PDF. Git 제외.
+- `local/cv/`: 비공개 CV 입력. Git 제외.
+- `files/Minseok_Cho_Academic_CV_*`: 비공개 CV DOCX·PDF. Git 제외.
 - `_includes/`, `_layouts/`, `_sass/`, `assets/`: 테마 코어. 디자인 변경 외 수정 금지.
 
 # user info 
