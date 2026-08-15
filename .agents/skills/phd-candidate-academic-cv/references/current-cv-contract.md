@@ -1,6 +1,6 @@
 # Current master CV contract
 
-Contract version: `1.5`
+Contract version: `1.6`
 
 Update this current specification before every CV content, evidence, layout,
 DOCX, or PDF change. Increment the version without adding a historical log.
@@ -12,7 +12,7 @@ DOCX, or PDF change. Increment the version without adding a historical log.
 - Draft basename: `Minseok_Cho_Academic_CV_Draft`.
 - Final basename: `Minseok_Cho_Academic_CV_Master`.
 - Output directory: `files/`; DOCX and PDF stay Git-ignored.
-- Page budget: exactly two US Letter pages.
+- Page budget: two to three US Letter pages.
 - Sequence: instruction -> source JSON -> DOCX -> rendered PNG QA -> PDF ->
   rendered PNG QA.
 
@@ -46,24 +46,26 @@ codes, and full street address.
 
 ## Layout tokens
 
-Use named override `academic_cv_master` derived from `compact_reference_guide`:
+Use named override `academic_cv_master`, a plain black serif academic layout:
 
 - Page: US Letter portrait; 1.0-inch margins; 0.492-inch header/footer distance.
-- Accent color: deep navy `#1F3864` for the name, section headings, and section
-  rules only. All other text is black or the muted gray below.
-- Font: Arial; body 10.5 pt; black; single spacing; 0 pt before and 1.5 pt after.
-- Name: 20 pt bold, navy, centered; contact line: 9 pt, muted gray `#414141`,
-  centered; no rule under the identity block.
-- Section heading: 10.5 pt bold, uppercase, navy, 1 pt letter spacing; a 0.75 pt
-  navy bottom rule spanning the text column; 10 pt before, 3 pt after; keep with
-  next paragraph.
-- Entry title: 10.5 pt; institution/role bold black; dates right-aligned with a
-  real right tab stop in muted gray.
-- Detail: 10 pt; bullets 9.6 pt with real Word bullet style, 0.18-inch marker,
-  0.36-inch text indent, 1.5 pt after.
-- No tables, columns, sidebars, shaded blocks, or icons; the navy accent above
-  is the only non-black/gray color.
-- No forced section page break: content flows naturally across the two pages,
+- Color: black text only. No accent color anywhere.
+- Font: Times New Roman for every run; body 11 pt; 1.5-line spacing throughout;
+  0 pt before and 0 pt after body paragraphs.
+- Name: 16 pt bold, black, centered; contact line: 11 pt, black, centered; no
+  rule under the identity block.
+- Section heading: 12 pt bold, uppercase, black, no letter spacing; a 0.75 pt
+  black bottom rule spanning the text column; 10 pt before, 2 pt after; keep
+  with next paragraph.
+- Entry title: 11 pt; institution/role bold black; dates right-aligned with a
+  real right tab stop, black.
+- Detail: 11 pt; bullets 11 pt with real Word bullet style, 0.18-inch marker,
+  0.36-inch text indent.
+- Citations: 11 pt, APA style as authored in the source JSON, applicant name
+  bold, followed by the full `https://doi.org/...` URL as visible hyperlink
+  text (never a bare `DOI` word).
+- No tables, columns, sidebars, shaded blocks, icons, or decorative color.
+- No forced section page break: content flows naturally across the pages,
   relying on keep-with-next to avoid orphaned headings.
 - Short labeled blocks (Technical Skills, Selected Research Software): chain
   keep-with-next through every line except the block's last so the block never
@@ -71,7 +73,7 @@ Use named override `academic_cv_master` derived from `compact_reference_guide`:
 
 ## Render acceptance
 
-- Exactly two pages in DOCX-derived PDF.
+- Two or three pages in DOCX-derived PDF.
 - No clipped, overlapping, orphaned, or unexpectedly wrapped content.
-- Consistent Arial rendering and section rhythm across both pages.
+- Consistent Times New Roman rendering and section rhythm across all pages.
 - DOCX and PDF carry the same visible text and section order.

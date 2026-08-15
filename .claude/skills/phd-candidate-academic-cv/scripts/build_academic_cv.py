@@ -20,9 +20,7 @@ from docx.shared import Inches, Pt, RGBColor
 SKILL_ROOT = Path(__file__).resolve().parents[1]
 CONTRACT_PATH = SKILL_ROOT / "references" / "current-cv-contract.md"
 BLACK = RGBColor(0, 0, 0)
-MUTED = RGBColor(65, 65, 65)
-NAVY = RGBColor(0x1F, 0x38, 0x64)
-NAVY_HEX = "1F3864"
+FONT = "Times New Roman"
 
 
 def contract_version() -> str:
@@ -35,21 +33,21 @@ def contract_version() -> str:
 
 def set_font(run: Any, *, size: float, bold: bool = False, italic: bool = False,
              color: RGBColor = BLACK) -> None:
-    run.font.name = "Arial"
-    run._element.get_or_add_rPr().rFonts.set(qn("w:ascii"), "Arial")
-    run._element.get_or_add_rPr().rFonts.set(qn("w:hAnsi"), "Arial")
+    run.font.name = FONT
+    run._element.get_or_add_rPr().rFonts.set(qn("w:ascii"), FONT)
+    run._element.get_or_add_rPr().rFonts.set(qn("w:hAnsi"), FONT)
     run.font.size = Pt(size)
     run.bold = bold
     run.italic = italic
     run.font.color.rgb = color
 
 
-def set_spacing(paragraph: Any, *, before: float = 0, after: float = 1.5,
+def set_spacing(paragraph: Any, *, before: float = 0, after: float = 0,
                 keep_with_next: bool = False) -> None:
     fmt = paragraph.paragraph_format
     fmt.space_before = Pt(before)
     fmt.space_after = Pt(after)
-    fmt.line_spacing_rule = WD_LINE_SPACING.SINGLE
+    fmt.line_spacing_rule = WD_LINE_SPACING.ONE_POINT_FIVE
     fmt.keep_with_next = keep_with_next
 
 
@@ -64,10 +62,10 @@ def add_hyperlink(paragraph: Any, text: str, url: str) -> None:
     run = paragraph._element.makeelement(qn("w:r"))
     rpr = paragraph._element.makeelement(qn("w:rPr"))
     rfonts = paragraph._element.makeelement(
-        qn("w:rFonts"), {qn("w:ascii"): "Arial", qn("w:hAnsi"): "Arial"}
+        qn("w:rFonts"), {qn("w:ascii"): FONT, qn("w:hAnsi"): FONT}
     )
     color = paragraph._element.makeelement(qn("w:color"), {qn("w:val"): "000000"})
-    size = paragraph._element.makeelement(qn("w:sz"), {qn("w:val"): "18"})
+    size = paragraph._element.makeelement(qn("w:sz"), {qn("w:val"): "22"})
     rpr.extend([rfonts, color, size])
     text_node = paragraph._element.makeelement(qn("w:t"))
     text_node.text = text
@@ -84,18 +82,18 @@ def add_section_heading(doc: Document, label: str) -> None:
 def add_entry_heading(doc: Document, left: str, right: str) -> None:
     p = doc.add_paragraph(style="CV Entry")
     p.paragraph_format.tab_stops.add_tab_stop(Inches(6.5), WD_TAB_ALIGNMENT.RIGHT)
-    set_font(p.add_run(left), size=10.5, bold=True)
-    set_font(p.add_run("\t" + right), size=10, color=MUTED)
+    set_font(p.add_run(left), size=11, bold=True)
+    set_font(p.add_run("\t" + right), size=11)
 
 
 def add_detail(doc: Document, text: str, *, italic: bool = False) -> None:
     p = doc.add_paragraph(style="CV Detail")
-    set_font(p.add_run(text), size=10, italic=italic)
+    set_font(p.add_run(text), size=11, italic=italic)
 
 
 def add_bullet(doc: Document, text: str) -> None:
     p = doc.add_paragraph(style="CV Bullet")
-    set_font(p.add_run(text), size=9.6)
+    set_font(p.add_run(text), size=11)
 
 
 def add_bold_name_paragraph(doc: Document, text: str, name: str, *, url: str | None = None) -> None:
@@ -103,14 +101,14 @@ def add_bold_name_paragraph(doc: Document, text: str, name: str, *, url: str | N
     cursor = 0
     for match in re.finditer(re.escape(name), text, flags=re.IGNORECASE):
         if match.start() > cursor:
-            set_font(p.add_run(text[cursor:match.start()]), size=9.6)
-        set_font(p.add_run(text[match.start():match.end()]), size=9.6, bold=True)
+            set_font(p.add_run(text[cursor:match.start()]), size=11)
+        set_font(p.add_run(text[match.start():match.end()]), size=11, bold=True)
         cursor = match.end()
     if cursor < len(text):
-        set_font(p.add_run(text[cursor:]), size=9.6)
+        set_font(p.add_run(text[cursor:]), size=11)
     if url:
-        set_font(p.add_run(" "), size=9.6)
-        add_hyperlink(p, "DOI", url)
+        set_font(p.add_run(" "), size=11)
+        add_hyperlink(p, url, url)
 
 
 def configure_document(doc: Document, title: str, version: str) -> None:
@@ -125,30 +123,26 @@ def configure_document(doc: Document, title: str, version: str) -> None:
     section.footer_distance = Inches(0.492)
 
     normal = doc.styles["Normal"]
-    normal.font.name = "Arial"
-    normal._element.rPr.rFonts.set(qn("w:ascii"), "Arial")
-    normal._element.rPr.rFonts.set(qn("w:hAnsi"), "Arial")
-    normal.font.size = Pt(10.5)
+    normal.font.name = FONT
+    normal._element.rPr.rFonts.set(qn("w:ascii"), FONT)
+    normal._element.rPr.rFonts.set(qn("w:hAnsi"), FONT)
+    normal.font.size = Pt(11)
     normal.font.color.rgb = BLACK
     normal.paragraph_format.space_before = Pt(0)
-    normal.paragraph_format.space_after = Pt(1.5)
-    normal.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
+    normal.paragraph_format.space_after = Pt(0)
+    normal.paragraph_format.line_spacing_rule = WD_LINE_SPACING.ONE_POINT_FIVE
 
     styles = doc.styles
     section_style = styles.add_style("CV Section", WD_STYLE_TYPE.PARAGRAPH)
     section_style.base_style = normal
-    section_style.font.name = "Arial"
-    section_style.font.size = Pt(10.5)
+    section_style.font.name = FONT
+    section_style.font.size = Pt(12)
     section_style.font.bold = True
-    section_style.font.color.rgb = NAVY
+    section_style.font.color.rgb = BLACK
     section_style.paragraph_format.space_before = Pt(10)
-    section_style.paragraph_format.space_after = Pt(3)
+    section_style.paragraph_format.space_after = Pt(2)
     section_style.paragraph_format.keep_with_next = True
-    # 1 pt letter spacing (w:spacing is in twentieths of a point).
-    section_rpr = section_style.element.get_or_add_rPr()
-    spacing = section_rpr.makeelement(qn("w:spacing"), {qn("w:val"): "20"})
-    section_rpr.append(spacing)
-    # 0.75 pt navy bottom rule (w:sz is in eighths of a point).
+    # 0.75 pt black bottom rule (w:sz is in eighths of a point).
     section_ppr = section_style.element.get_or_add_pPr()
     pbdr = section_ppr.makeelement(qn("w:pBdr"), {})
     bottom = section_ppr.makeelement(
@@ -157,7 +151,7 @@ def configure_document(doc: Document, title: str, version: str) -> None:
             qn("w:val"): "single",
             qn("w:sz"): "6",
             qn("w:space"): "2",
-            qn("w:color"): NAVY_HEX,
+            qn("w:color"): "000000",
         },
     )
     pbdr.append(bottom)
@@ -165,30 +159,30 @@ def configure_document(doc: Document, title: str, version: str) -> None:
 
     entry = styles.add_style("CV Entry", WD_STYLE_TYPE.PARAGRAPH)
     entry.base_style = normal
-    entry.paragraph_format.space_before = Pt(2.5)
+    entry.paragraph_format.space_before = Pt(4)
     entry.paragraph_format.space_after = Pt(0)
     entry.paragraph_format.keep_with_next = True
 
     detail = styles.add_style("CV Detail", WD_STYLE_TYPE.PARAGRAPH)
     detail.base_style = normal
-    detail.paragraph_format.space_after = Pt(0.5)
+    detail.paragraph_format.space_after = Pt(0)
     detail.paragraph_format.keep_with_next = True
 
     bullet = styles.add_style("CV Bullet", WD_STYLE_TYPE.PARAGRAPH)
     bullet.base_style = styles["List Bullet"]
-    bullet.font.name = "Arial"
-    bullet.font.size = Pt(9.6)
+    bullet.font.name = FONT
+    bullet.font.size = Pt(11)
     bullet.font.color.rgb = BLACK
     bullet.paragraph_format.left_indent = Inches(0.36)
     bullet.paragraph_format.first_line_indent = Inches(-0.18)
-    bullet.paragraph_format.space_after = Pt(1.5)
-    bullet.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
+    bullet.paragraph_format.space_after = Pt(0)
+    bullet.paragraph_format.line_spacing_rule = WD_LINE_SPACING.ONE_POINT_FIVE
 
     citation = styles.add_style("CV Citation", WD_STYLE_TYPE.PARAGRAPH)
     citation.base_style = normal
     citation.paragraph_format.left_indent = Inches(0.18)
     citation.paragraph_format.first_line_indent = Inches(-0.18)
-    citation.paragraph_format.space_after = Pt(3)
+    citation.paragraph_format.space_after = Pt(2)
 
     props = doc.core_properties
     props.title = title
@@ -236,19 +230,19 @@ def build(data: dict[str, Any], output: Path) -> None:
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     set_spacing(p, after=1)
-    set_font(p.add_run(data["name"].upper()), size=20, bold=True, color=NAVY)
+    set_font(p.add_run(data["name"].upper()), size=16, bold=True)
 
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     set_spacing(p, after=4)
     contact = data["contact"]
     items = [contact["location"], contact["email"], contact["website"], contact["github"]]
-    set_font(p.add_run("  |  ".join(items)), size=9, color=MUTED)
+    set_font(p.add_run("  |  ".join(items)), size=11)
 
     add_section_heading(doc, "Research Profile")
     p = doc.add_paragraph()
-    set_spacing(p, after=2.5)
-    set_font(p.add_run(data["research_profile"]), size=10)
+    set_spacing(p)
+    set_font(p.add_run(data["research_profile"]), size=11)
 
     add_section_heading(doc, "Education")
     for item in data["education"]:
@@ -277,9 +271,9 @@ def build(data: dict[str, Any], output: Path) -> None:
     add_section_heading(doc, "Technical Skills")
     for index, item in enumerate(data["skills"]):
         p = doc.add_paragraph()
-        set_spacing(p, after=1, keep_with_next=index < len(data["skills"]) - 1)
-        set_font(p.add_run(item["label"] + ": "), size=9.8, bold=True)
-        set_font(p.add_run(item["text"]), size=9.8)
+        set_spacing(p, keep_with_next=index < len(data["skills"]) - 1)
+        set_font(p.add_run(item["label"] + ": "), size=11, bold=True)
+        set_font(p.add_run(item["text"]), size=11)
 
     add_section_heading(doc, "Teaching & Community Engagement")
     for item in data["engagement"]:
@@ -290,8 +284,8 @@ def build(data: dict[str, Any], output: Path) -> None:
     add_section_heading(doc, "Selected Research Software")
     for index, item in enumerate(data["software"]):
         p = doc.add_paragraph()
-        set_spacing(p, after=1.5, keep_with_next=index < len(data["software"]) - 1)
-        set_font(p.add_run(item["name"] + ": "), size=9.6, bold=True)
+        set_spacing(p, keep_with_next=index < len(data["software"]) - 1)
+        set_font(p.add_run(item["name"] + ": "), size=11, bold=True)
         add_hyperlink(p, item["display_url"], item["url"])
 
     output.parent.mkdir(parents=True, exist_ok=True)

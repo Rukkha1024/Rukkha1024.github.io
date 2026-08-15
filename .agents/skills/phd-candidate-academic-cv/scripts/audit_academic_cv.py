@@ -99,8 +99,8 @@ def main() -> int:
         from pypdf import PdfReader
 
         reader = PdfReader(args.pdf)
-        if len(reader.pages) != 2:
-            errors.append(f"PDF must have exactly 2 pages, found {len(reader.pages)}")
+        if len(reader.pages) not in (2, 3):
+            errors.append(f"PDF must have 2 or 3 pages, found {len(reader.pages)}")
         pdf_text = "\n".join(page.extract_text() or "" for page in reader.pages)
         validate_text(pdf_text, data, errors)
         for section in REQUIRED_SECTIONS:

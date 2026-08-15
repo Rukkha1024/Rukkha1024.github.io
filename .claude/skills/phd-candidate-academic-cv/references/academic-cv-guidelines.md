@@ -34,9 +34,14 @@ Source: [Curricula vitae (CVs)](https://capd.mit.edu/resources/cvs/)
 
 ## Applied master-CV decisions
 
-- Use a two-page, single-column, research-first master CV for this early-career
-  applicant.
+- Use a two-to-three-page, single-column, research-first master CV for this
+  early-career applicant.
+- Follow the user's fixed formatting rule: Times New Roman, 11-12 pt text,
+  1.5-2 line spacing. Field-reference faculty CVs (Franz, McPherson, Miller,
+  Lei, Ma) all use plain black serif typography without decorative color.
 - Use restrained black typography, explicit section hierarchy, right-aligned
   dates, real bullets, and no decorative boxes, photo, or graphic skill bars.
+- Keep publication citations in APA style per the user's decision, with the
+  full DOI URL written out so it survives printing.
 - Preserve the master as general graduate-application evidence. Make a separate
   tailored copy only when a program explicitly requires it.
