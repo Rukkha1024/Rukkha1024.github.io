@@ -26,7 +26,7 @@ Directions I want to take further:
 
 - EMG, motion capture, and force-plate data collection and analysis (16-channel wireless EMG (Delsys), 14-camera Motive, 4 force plates)
 - NMF muscle-synergy analysis
-- Python for data analysis, processing pipelines, and automation
+- Python and R for data analysis, processing pipelines, and automation
 
 ## Education
 

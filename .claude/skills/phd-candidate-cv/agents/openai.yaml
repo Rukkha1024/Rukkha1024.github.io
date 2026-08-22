@@ -1,0 +1,4 @@
+interface:
+  display_name: "PhD CV"
+  short_description: "Edit the private graduate application CV on resume.lol"
+  default_prompt: "Use $phd-candidate-cv to update my private CV on resume.lol."
