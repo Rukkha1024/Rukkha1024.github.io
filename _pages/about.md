@@ -33,7 +33,9 @@ Directions I want to take further:
 
 - [Cheongju University, Dept. of Sports Rehabilitation](https://www.cju.ac.kr/sptrehab/index.do), M.S. in Sports Medicine, 2025–2027 (expected)
   - Advisor: [Prof. Yushin Kim](https://scholar.google.co.kr/citations?user=hdV_QJMAAAAJ&hl=en)
+  - GPA: 4.00/4.00
 - [Hanyang University ERICA, Sports Coaching Major](http://sportsnarts.hanyang.ac.kr/en/sport/), 2019–2025 (including two years of mandatory military service)
+  - GPA: 3.62/4.00
 
 ## Grants
 
