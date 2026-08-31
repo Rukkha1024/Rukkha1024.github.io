@@ -8,15 +8,13 @@ redirect_from:
   - /publication/2025-12-31-manual-handling-equipment
 ---
 
-## Manuscripts Under Review
+## Journal Articles
 
 ### A within-subject biomechanical comparison of stepping and non-stepping responses to identical unexpected perturbations (under review)
 
 - Compares stepping and non-stepping responses within the same participants.
 - Uses identical unexpected perturbations to distinguish response strategy from perturbation conditions.
 - Examines the biomechanical differences between the two response types.
-
-## Journal Articles
 
 ### [Effects of Biomechanical Improvements in Manual Handling Equipment on Users’ Muscle Activations](https://doi.org/10.24332/aospt.2025.21.2.12)
 
