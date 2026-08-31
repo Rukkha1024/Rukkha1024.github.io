@@ -16,6 +16,8 @@ redirect_from:
 - Uses identical unexpected perturbations to distinguish response strategy from perturbation conditions.
 - Examines the biomechanical differences between the two response types.
 
+> **Minseok Cho**, Yushin Kim. A within-subject biomechanical comparison of stepping and non-stepping responses to identical unexpected perturbations (under review).
+
 ### [Effects of Biomechanical Improvements in Manual Handling Equipment on Users’ Muscle Activations](https://doi.org/10.24332/aospt.2025.21.2.12)
 
 
