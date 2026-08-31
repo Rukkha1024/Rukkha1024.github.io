@@ -39,7 +39,7 @@ Directions I want to take further:
 
 ## Grants
 
-- Master's Student Research Grant, National Research Foundation of Korea. "Predicting Fall Risk in Older Adults Using Muscle Synergy Analysis and Convolutional Neural Networks (CNN)." Principal Investigator. KRW 12,000,000 (approx. USD 8,700). 2026–2027.
+- Master's Student Research Grant, National Research Foundation of Korea. "Predicting Fall Risk in Older Adults Using Muscle Synergy Analysis and Convolutional Neural Networks (CNN)." Principal Investigator. KRW 12,000,000 (USD 8,700). 2026–2027.
 
 ## Research Activities
 
