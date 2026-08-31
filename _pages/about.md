@@ -26,6 +26,7 @@ Directions I want to take further:
 
 - EMG, motion capture, and force-plate data collection and analysis (16-channel wireless EMG (Delsys), 14-camera Motive, 4 force plates)
 - NMF muscle-synergy analysis
+- Deep learning (CNN) for movement and EMG data classification in Python
 - Python and R for data analysis, processing pipelines, and automation
 
 ## Education
@@ -33,6 +34,10 @@ Directions I want to take further:
 - [Cheongju University, Dept. of Sports Rehabilitation](https://www.cju.ac.kr/sptrehab/index.do), M.S. in Sports Medicine, 2025–2027 (expected)
   - Advisor: [Prof. Yushin Kim](https://scholar.google.co.kr/citations?user=hdV_QJMAAAAJ&hl=en)
 - [Hanyang University ERICA, Sports Coaching Major](http://sportsnarts.hanyang.ac.kr/en/sport/), 2019–2025 (including two years of mandatory military service)
+
+## Grants
+
+- Master's Student Research Grant, National Research Foundation of Korea. "Predicting Fall Risk in Older Adults Using Muscle Synergy Analysis and Convolutional Neural Networks (CNN)." Principal Investigator. KRW 12,000,000 (approx. USD 8,700). 2026–2027.
 
 ## Research Activities
 
