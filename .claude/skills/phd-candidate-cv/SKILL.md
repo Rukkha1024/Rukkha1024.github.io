@@ -24,7 +24,7 @@ Never pass `css` or `meta_css` as arguments unless changing them is the task.
 
 ## Keep facts true
 
-- Sources: official academic records, `_pages/about.md`, `_pages/publications.md`, the user's latest explicit correction.
+- Sources: official academic records, `_pages/about.md`, `_pages/publications.md`, `_pages/grants.md`, the user's latest explicit correction.
 - Never invent a degree, grade, date, role, publication, tool, or skill.
 - Preserve conflicts and omissions. Ask the user instead of filling a gap.
 - Keep the GPA labeled `(provisional conversion)` until an official 4.0-scale result exists.

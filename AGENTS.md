@@ -3,7 +3,7 @@
 - 목적: 박사과정 유학 지원용 GitHub Pages résumé 제작.
 - 대상: 해외 대학 교수, PI, 입학 심사자.
 - 기반 템플릿: Academic Pages.
-- 공개 콘텐츠 원본: `_pages/about.md`, `_pages/publications.md`.
+- 공개 콘텐츠 원본: `_pages/about.md`, `_pages/publications.md`, `_pages/grants.md`.
 - 이 파일: 공통 규칙과 문서 경로만 기록하는 routing index.
 - 목표: 150줄 이하.
 
@@ -18,6 +18,7 @@
 - 댓글, 더보기, 피드, 공유, 제작 문구 사용 금지.
 - 공개 이력: 소개 파일에 학력·연구 활동·기타 활동 통합.
 - 논문: 논문 파일 1개에 직접 작성. 영어 3줄 요약 즉시 표시. 제목은 DOI 직접 연결. 별도 중복 링크 금지.
+- 연구비: 연구비 파일 1개에 직접 작성. 기관명 — 프로그램명 heading. 과제·역할·금액·기간 bullet. 소개 파일에 중복 금지.
 - 문서와 구현이 다르면 문서 먼저 수정.
 - 수정 전 계획과 미리보기 제시.
 - 사용자 승인 후 파일 수정.
@@ -36,6 +37,7 @@
 - `_config.yml`: 이름, 프로필, 외부 링크.
 - `_pages/about.md`: 소개, 학력, 연구 관심, 연구 활동, 기타 활동.
 - `_pages/publications.md`: 전체 논문 목록과 영어 3줄 요약.
+- `_pages/grants.md`: 연구비 수주 목록.
 - `_data/navigation.yml`: 상단 메뉴.
 - `.agents/skills/phd-candidate-cv/`: 비공개 대학원 지원 CV instruction. 정본.
 - `.claude/skills/phd-candidate-cv/`: `.agents` CV skill의 byte-identical runtime mirror.

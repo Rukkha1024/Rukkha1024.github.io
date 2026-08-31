@@ -9,6 +9,7 @@ Academic Pages로 만든 박사과정 유학 지원용 résumé입니다. 평소
 
 - 소개, 학력, 연구 활동, 기타 활동: `_pages/about.md`
 - 전체 논문 목록과 영어 3줄 요약: `_pages/publications.md`
+- 연구비 수주 목록: `_pages/grants.md`
 - 이름, 소개, GitHub, 이메일: `_config.yml` 상단의 `title`, `description`,
   `author` 항목
 - 상단 메뉴: `_data/navigation.yml`
