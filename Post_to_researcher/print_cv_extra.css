@@ -1,0 +1,76 @@
+
+/* ===== print variant: header with QR codes and photo ===== */
+.hdr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.qrs {
+    display: flex;
+    gap: 0.12in;
+}
+
+.qr-site, .qr-mail {
+    width: 0.8in;
+    height: 0.8in;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.qr-cap {
+    width: 0.8in;
+    font-size: 7.5pt;
+    text-align: center;
+    color: #444;
+    margin-bottom: 2px;
+}
+
+.qr { display: flex; flex-direction: column; align-items: center; }
+
+.who {
+    flex: 1;
+    text-align: center;
+}
+
+.who .name {
+    font-size: 24pt;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.who .contact {
+    font-size: 10pt;
+}
+
+.photo {
+    width: 1.1in;
+    height: 1.44in;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    border: 1px solid #999;
+}
+
+/* nested summary bullets under citations */
+ul ul {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 1px;
+}
+
+ul ul > li {
+    font-size: 9.5pt;
+    color: #333;
+}
+
+ul ul > li:before {
+    content: "–";
+    font-weight: normal;
+}
+
+/* keep a citation and its summary bullets on one page */
+ul > li { break-inside: avoid; page-break-inside: avoid; }
+h2, h3 { break-after: avoid; page-break-after: avoid; }
