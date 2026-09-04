@@ -1,4 +1,4 @@
-<div class="hdr"><div class="qrs"><div class="qr"><div class="qr-site"></div><div class="qr-cap">Résumé</div></div><div class="qr"><div class="qr-mail"></div><div class="qr-cap">Email</div></div></div><div class="who"><div class="name">MINSEOK CHO</div><div class="contact">Cheongju, South Korea</div><div class="contact">cho9911@gmail.com</div><div class="contact">rukkha1024.github.io</div></div><div class="photo"></div></div>
+<div class="hdr"><div class="photo"></div><div class="who"><div class="name">MINSEOK CHO</div><div class="contact">Cheongju, South Korea</div><div class="contact">cho9911@gmail.com</div><div class="contact">rukkha1024.github.io</div></div><div class="qrs"><div class="qr"><div class="qr-site"></div><div class="qr-cap">Résumé</div></div><div class="qr"><div class="qr-mail"></div><div class="qr-cap">Email</div></div></div></div>
 
 ## RESEARCH PROFILE
 

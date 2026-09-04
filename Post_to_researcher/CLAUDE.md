@@ -38,7 +38,7 @@
 
 # 내용 계약
 
-- 헤더 3열: 좌 QR 2개 (사이트 `https://rukkha1024.github.io`, 메일 `mailto:cho9911@gmail.com`) | 중 이름·연락처·`rukkha1024.github.io` 텍스트 | 우 사진.
+- 헤더 3열: 좌 사진 | 중 이름·연락처·`rukkha1024.github.io` 텍스트 | 우 QR 2개 (사이트 `https://rukkha1024.github.io`, 메일 `mailto:cho9911@gmail.com`).
 - RESEARCH PROFILE 뒤에 `Directions I want to take further` 4 bullet.
 - EDUCATION 한양대 줄에 `(including two years of mandatory military service)`.
 - JOURNAL ARTICLES 각 인용 아래 3줄 요약 하위 리스트.
@@ -86,5 +86,6 @@ python은 `/opt/anaconda3/bin/python3` (segno, python-docx, Pillow, pypdf 설치
 # 결정 기록
 
 - 2026-09-04: resume.lol 2번째 resume과 docx 둘 다 만든다. 비교 후 사용자가 고른다.
-- 2026-09-04: 3페이지까지 허용. GitHub URL 미표기. QR 좌측·사진 우측.
+- 2026-09-04: 3페이지까지 허용. GitHub URL 미표기. 처음엔 QR 좌측·사진 우측이었으나 사용자 요청으로 사진 좌측·QR 우측으로 교체.
+- 2026-09-04: 제목은 이름 유지. 부제(`Curriculum Vitae · 날짜`) 추가 여부는 사용자 미결정.
 - 2026-09-04: resume.lol 판 PDF 2페이지 확인(사진·QR·Open Sans·논문 요약 하위 불릿·페이지 경계에서 인용 분리 없음). Word 판은 구조 검사만 통과, 시각 확인은 사용자 몫.

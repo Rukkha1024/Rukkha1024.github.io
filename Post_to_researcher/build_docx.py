@@ -82,18 +82,20 @@ def header(doc: Document) -> None:
     table = doc.add_table(rows=1, cols=3)
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     no_table_borders(table)
-    left, mid, right = table.rows[0].cells
-    for cell, width in ((left, Inches(1.9)), (mid, Inches(4.5)), (right, Inches(1.1))):
+    right, mid, left = table.rows[0].cells  # photo | name | QR
+    for cell, width in ((right, Inches(1.1)), (mid, Inches(4.5)), (left, Inches(1.9))):
         cell.width = width
     # QR codes side by side with captions
     p = left.paragraphs[0]
+    p.alignment = WD_ALIGN_PARAGRAPH.RIGHT
     tight(p)
     for name in ("qr_site.png", "qr_mail.png"):
         p.add_run().add_picture(str(ASSETS / name), width=Inches(0.8))
         p.add_run("  ")
     cap = left.add_paragraph()
+    cap.alignment = WD_ALIGN_PARAGRAPH.RIGHT
     tight(cap)
-    set_font(cap.add_run("  Résumé              Email"), 7.5, color=RGBColor(0x44, 0x44, 0x44))
+    set_font(cap.add_run("Résumé              Email  "), 7.5, color=RGBColor(0x44, 0x44, 0x44))
     # name + contact
     p = mid.paragraphs[0]
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -106,7 +108,7 @@ def header(doc: Document) -> None:
         set_font(q.add_run(line), 10)
     # photo
     p = right.paragraphs[0]
-    p.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+    p.alignment = WD_ALIGN_PARAGRAPH.LEFT
     tight(p)
     p.add_run().add_picture(str(ASSETS / "profile.jpg"), width=Inches(1.1))
     for cell in (left, mid, right):
