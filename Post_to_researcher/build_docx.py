@@ -79,24 +79,21 @@ def no_table_borders(table) -> None:
 
 
 def header(doc: Document) -> None:
+    """photo + site QR | name/contact | mail QR. QR 두 개를 양끝에 두어 카메라가 하나만 잡게 한다."""
     table = doc.add_table(rows=1, cols=3)
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     no_table_borders(table)
-    right, mid, left = table.rows[0].cells  # photo | name | QR
-    for cell, width in ((right, Inches(1.1)), (mid, Inches(4.5)), (left, Inches(1.9))):
+    left, mid, right = table.rows[0].cells
+    for cell, width in ((left, Inches(2.2)), (mid, Inches(4.3)), (right, Inches(1.0))):
         cell.width = width
-    # QR codes side by side with captions
     p = left.paragraphs[0]
-    p.alignment = WD_ALIGN_PARAGRAPH.RIGHT
     tight(p)
-    for name in ("qr_site.png", "qr_mail.png"):
-        p.add_run().add_picture(str(ASSETS / name), width=Inches(0.8))
-        p.add_run("  ")
+    p.add_run().add_picture(str(ASSETS / "profile.jpg"), width=Inches(1.1))
+    p.add_run("   ")
+    p.add_run().add_picture(str(ASSETS / "qr_site.png"), width=Inches(0.8))
     cap = left.add_paragraph()
-    cap.alignment = WD_ALIGN_PARAGRAPH.RIGHT
     tight(cap)
-    set_font(cap.add_run("Résumé              Email  "), 7.5, color=RGBColor(0x44, 0x44, 0x44))
-    # name + contact
+    set_font(cap.add_run(" " * 34 + "Résumé"), 7.5, color=RGBColor(0x44, 0x44, 0x44))
     p = mid.paragraphs[0]
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     tight(p, after=4)
@@ -106,13 +103,16 @@ def header(doc: Document) -> None:
         q.alignment = WD_ALIGN_PARAGRAPH.CENTER
         tight(q)
         set_font(q.add_run(line), 10)
-    # photo
     p = right.paragraphs[0]
-    p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    p.alignment = WD_ALIGN_PARAGRAPH.RIGHT
     tight(p)
-    p.add_run().add_picture(str(ASSETS / "profile.jpg"), width=Inches(1.1))
+    p.add_run().add_picture(str(ASSETS / "qr_mail.png"), width=Inches(0.8))
+    cap = right.add_paragraph()
+    cap.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+    tight(cap)
+    set_font(cap.add_run("Email   "), 7.5, color=RGBColor(0x44, 0x44, 0x44))
     for cell in (left, mid, right):
-        cell.vertical_alignment = 1  # center
+        cell.vertical_alignment = 1
 
 
 def h2(doc: Document, text: str) -> None:

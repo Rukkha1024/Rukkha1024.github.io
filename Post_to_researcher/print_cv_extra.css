@@ -7,9 +7,10 @@
     margin-bottom: 4px;
 }
 
-.qrs {
+.left {
     display: flex;
-    gap: 0.12in;
+    gap: 0.15in;
+    align-items: center;
 }
 
 .qr-site, .qr-mail {

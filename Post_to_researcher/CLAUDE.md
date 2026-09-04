@@ -20,7 +20,7 @@
 
 # 계약
 
-- Letter, 0.5in, 최대 3페이지. 헤더: 좌 사진 | 중 이름·연락처·`rukkha1024.github.io` | 우 QR 2개(사이트, `mailto:cho9911@gmail.com`).
+- Letter, 0.5in, 최대 3페이지. 헤더: 좌 사진 + 사이트 QR | 중 이름·연락처·`rukkha1024.github.io` | 우 끝 메일 QR(`mailto:cho9911@gmail.com`). QR 두 개는 양끝에 떨어뜨린다.
 - `Minseok`에 더한 것: 연구 방향 4 bullet, 군복무 문구, 논문별 3줄 요약 하위 리스트, HOBBIES. GitHub URL 미표기.
 - 사용자 `<br>` 전부 보존.
 
@@ -44,6 +44,7 @@ python은 `/opt/anaconda3/bin/python3`.
 
 # 결정
 
-- 2026-09-04: resume.lol 판·docx 판 둘 다 만들고 사용자가 고른다. 3페이지 허용. 사진 좌·QR 우.
+- 2026-09-04: resume.lol 판·docx 판 둘 다 만들고 사용자가 고른다. 3페이지 허용.
+- 2026-09-05: QR 양끝 배치. 봉투는 손편지(200단어 이내) + CV. 상세는 `README.md`.
 - 2026-09-04: 제목은 이름. 부제(`Curriculum Vitae · 날짜`) 여부 미결정.
 - resume.lol 판 PDF 2페이지 확인 완료. Word 판은 구조 검사만, 시각 확인은 사용자 몫.
