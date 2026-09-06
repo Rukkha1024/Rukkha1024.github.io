@@ -8,7 +8,8 @@
 - resume.lol `Minseok`(`b55d572d-8f60-43cc-bafa-89ebe995dd7a`)이 정본. 여기서 수정 금지.
 - 새 사실 생성 금지. 추가 문장은 `Minseok` markdown, `../_pages/*.md`에 있는 것만.
 - 산출물 전부 git 추적. 저장소 PUBLIC, 사용자 승인됨.
-- 집주소는 `주소/`에만 둔다. CV·README·커밋 메시지에 옮기지 않는다. `주소/`는 로컬 전용(`.gitignore`, 2026-09-06 결정). 절대 stage 금지.
+- 집주소는 `주소/유저_주소_정보.md`에만 둔다. CV·README·커밋 메시지에 옮기지 않는다. 이 파일은 로컬 전용(`.gitignore`, 2026-09-06 결정). 절대 stage 금지.
+- `주소/연구자_주소.csv`는 우편 수신인 주소 파일. git 추적 대상. 공개된 연구기관 주소만 기록.
 
 # 파일
 
@@ -20,6 +21,7 @@
 - `build_pdf.py` → `Minseok_Cho_CV_print.pdf`. `build_docx.py` → `Minseok_Cho_CV_print.docx`.
 - `Minseok_Cho_CV_print_docx.pdf`: 사용자가 Word에서 수동 export한 docx 판 PDF(3페이지). 스크립트로 재생성 안 됨.
 - `주소/유저_주소_정보.md`: 보내는 사람 이름·주소·우편번호. 봉투 발신인·회신 주소 전용, CV에는 `Cheongju, South Korea`까지만.
+- `주소/연구자_주소.csv`: 대상 연구자의 공개 연구기관 우편 주소. 봉투 수신인 전용.
 
 # 계약
 
@@ -44,4 +46,3 @@ python은 `/opt/anaconda3/bin/python3`.
 - css 인자에 큰 base64 금지(MCP 전송 중 깨짐). 사진은 공개 URL, QR만 data URI. PDF는 `build_pdf.py`가 로컬 사진·폰트를 심는다.
 - export는 PagedJS + Google Fonts `@import`. headless Chrome에선 빈 PDF. `build_pdf.py`가 둘 다 제거하고 Chrome 기본 @page 사용. body 폰트는 `!important` 필요. `--user-data-dir` 주면 멈춤.
 - Word 판 폰트: `assets/fonts/*.ttf`를 `~/Library/Fonts/`에 복사(2026-09-04 완료).
-
