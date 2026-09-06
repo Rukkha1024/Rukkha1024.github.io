@@ -8,6 +8,7 @@
 - resume.lol `Minseok`(`b55d572d-8f60-43cc-bafa-89ebe995dd7a`)이 정본. 여기서 수정 금지.
 - 새 사실 생성 금지. 추가 문장은 `Minseok` markdown, `../_pages/*.md`에 있는 것만.
 - 산출물 전부 git 추적. 저장소 PUBLIC, 사용자 승인됨.
+- 집주소는 `주소/`에만 둔다. CV·README·커밋 메시지에 옮기지 않는다. `주소/`의 공개 저장소 추적 여부는 사용자 결정(미결, 승인 전 stage 금지).
 
 # 파일
 
@@ -17,6 +18,8 @@
 - `print_cv.html`: `get_resume_html` export 그대로.
 - `assets/build_assets.py` → QR 2개, `profile.jpg`, `print_assets.css`. `assets/fonts/`: Open Sans TTF.
 - `build_pdf.py` → `Minseok_Cho_CV_print.pdf`. `build_docx.py` → `Minseok_Cho_CV_print.docx`.
+- `Minseok_Cho_CV_print_docx.pdf`: 사용자가 Word에서 수동 export한 docx 판 PDF(3페이지). 스크립트로 재생성 안 됨.
+- `주소/유저_주소_정보.md`: 보내는 사람 이름·주소·우편번호. 봉투 발신인·회신 주소 전용, CV에는 `Cheongju, South Korea`까지만.
 
 # 계약
 
@@ -42,9 +45,3 @@ python은 `/opt/anaconda3/bin/python3`.
 - export는 PagedJS + Google Fonts `@import`. headless Chrome에선 빈 PDF. `build_pdf.py`가 둘 다 제거하고 Chrome 기본 @page 사용. body 폰트는 `!important` 필요. `--user-data-dir` 주면 멈춤.
 - Word 판 폰트: `assets/fonts/*.ttf`를 `~/Library/Fonts/`에 복사(2026-09-04 완료).
 
-# 결정
-
-- 2026-09-04: resume.lol 판·docx 판 둘 다 만들고 사용자가 고른다. 3페이지 허용.
-- 2026-09-05: QR 양끝 배치. 봉투는 손편지(200단어 이내) + CV. 상세는 `README.md`.
-- 2026-09-04: 제목은 이름. 부제(`Curriculum Vitae · 날짜`) 여부 미결정.
-- resume.lol 판 PDF 2페이지 확인 완료. Word 판은 구조 검사만, 시각 확인은 사용자 몫.
