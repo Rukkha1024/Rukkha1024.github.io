@@ -26,7 +26,7 @@
 # 계약
 
 - Letter, 0.5in, 최대 3페이지. 헤더: 좌 사진 + 사이트 QR | 중 이름·연락처·`rukkha1024.github.io` | 우 끝 메일 QR(`mailto:cho9911@gmail.com`). QR 두 개는 양끝에 떨어뜨린다.
-- `Minseok`에 더한 것: 연구 방향 4 bullet, 군복무 문구, 논문별 3줄 요약 하위 리스트, HOBBIES. GitHub URL 미표기.
+- `Minseok`에 더한 것: 연구 방향 4 bullet, 군복무 문구, 논문별 3줄 요약 하위 리스트. HOBBIES·GitHub URL 미표기(HOBBIES 제외 2026-09-25 결정).
 - 사용자 `<br>` 전부 보존.
 
 # 절차
