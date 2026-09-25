@@ -86,7 +86,3 @@ GPA: 3.62/4.00
 - Co-authored fall-prevention teaching materials used in a specialist instructor training course and an education program for community-dwelling older adults.
 - Delivered individualized fall-risk assessment reports and taught tailored fall-prevention exercises based on participant results.
 - Participated in the 2025 Fall Prevention Specialist Instructor Training Course (BASIC), organized by the Korea Disease Control and Prevention Agency and the National Injury Management Center and operated by Korea University.
-
-## HOBBIES
-
-- Artistic gymnastics; strength &amp; functional training; workflow automation with Python

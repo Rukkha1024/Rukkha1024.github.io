@@ -19,7 +19,7 @@
 - `print_cv.html`: `get_resume_html` export 그대로.
 - `assets/build_assets.py` → QR 2개, `profile.jpg`, `print_assets.css`. `assets/fonts/`: Open Sans TTF.
 - `build_pdf.py` → `Minseok_Cho_CV_print.pdf`. `build_docx.py` → `Minseok_Cho_CV_print.docx`.
-- `Minseok_Cho_CV_print_docx.pdf`: 사용자가 Word에서 수동 export한 docx 판 PDF(3페이지). 스크립트로 재생성 안 됨.
+- `Minseok_Cho_CV_print_docx.pdf`: 사용자가 Word에서 수동 export한 docx 판 PDF(2페이지). 스크립트로 재생성 안 됨. 2026-09-25 HOBBIES만 있던 3쪽을 삭제.
 - `주소/유저_주소_정보.md`: 보내는 사람 이름·주소·우편번호. 봉투 발신인·회신 주소 전용, CV에는 `Cheongju, South Korea`까지만.
 - `주소/연구자_주소.csv`: 대상 연구자의 공개 연구기관 우편 주소. 봉투 수신인 전용.
 
