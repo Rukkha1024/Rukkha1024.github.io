@@ -25,7 +25,7 @@ GPA: 4.00/4.00
 
 Sport Coaching; Media & Social Informatics (including two years of mandatory military service)
 
-GPA: 3.62/4.00
+GPA: 3.63/4.00
 
 ## GRANTS
 
@@ -57,13 +57,13 @@ GPA: 3.62/4.00
 ### **Cheongju University - Master's Research** 2025-present
 <br>
 
-- **Conducted biomechanics projects** with 33 young adults and 40 older adults. 
+- **Conducted biomechanics projects** with 33 young adults and 50 older adults. 
 - Compared stepping and non-stepping responses to identical unexpected perturbations within subjects (under review, 2026).
 - Analyzing age-related differences in perturbation responses in unconstrained environments (ongoing).
 - PI, NRF Master's Student Research Grant (2026-2027): predicting fall risk in older adults with muscle synergy and CNN.
 - Analyzed gait muscle-coordination structures in patients with brain lesions using NMF-based muscle-synergy analysis and k-means clustering to compare patterns between groups.
 - Analyzed how biomechanically improved manual-handling equipment changed trunk and lower-limb muscle activation during pushing, pulling, and lifting tasks with a 20-kg load.
-- Created a Python-based fall-risk assessment and reporting system that grades experimental and questionnaire data and generates individualized PDF reports for older-adult participants (open-source).
+- Created a Python-based fall-risk assessment and reporting system that grades a questionnaire and clinical tests (FES-I, Timed Up and Go, grip strength, gait parameters, one-leg standing, 30-second chair stand, and Berg Balance Scale) and generates individualized PDF reports for older-adult participants (open-source).
 
 ### **Hanyang University ERICA - Undergraduate Research** 2019-2025
 <br>

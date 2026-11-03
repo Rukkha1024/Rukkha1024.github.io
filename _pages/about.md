@@ -35,7 +35,7 @@ Directions I want to take further:
   - Advisor: [Prof. Yushin Kim](https://scholar.google.co.kr/citations?user=hdV_QJMAAAAJ&hl=en)
   - GPA: 4.00/4.00
 - [Hanyang University ERICA, Sports Coaching Major](http://sportsnarts.hanyang.ac.kr/en/sport/), 2019–2025 (including two years of mandatory military service)
-  - GPA: 3.62/4.00
+  - GPA: 3.63/4.00
 
 ## Research Activities
 
