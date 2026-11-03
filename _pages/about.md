@@ -41,7 +41,7 @@ Directions I want to take further:
 
 ### Master's (2025-2027)
 
-- Conducted biomechanics experiments with 33 young adults and 40 community-dwelling older adults in Cheongju; for the older-adult cohort, recruited participants, delivered an individualized fall-risk assessment report to each participant, and taught tailored fall-prevention exercise programs based on the results
+- Conducted biomechanics experiments with 33 young adults and 50 community-dwelling older adults in Cheongju; for the older-adult cohort, recruited participants, delivered an individualized fall-risk assessment report to each participant, and taught tailored fall-prevention exercise programs based on the results
   - Built an [automated fall-risk assessment & reporting system](https://github.com/Rukkha1024/elderly-balance-assessment-public) that grades fall risk from experimental data (TUG, gait, one-leg-standing, questionnaires) and auto-generates each participant's PDF report
   - Compared stepping vs. non-stepping responses to identical unexpected perturbations within subjects; under review[*](/publications/)
   - Analyzing age-related differences in perturbation responses in unconstrained environments (ongoing)
