@@ -42,7 +42,7 @@ Directions I want to take further:
 ### Master's (2025-2027)
 
 - Conducted biomechanics experiments with 33 young adults and 50 community-dwelling older adults in Cheongju; for the older-adult cohort, recruited participants, delivered an individualized fall-risk assessment report to each participant, and taught tailored fall-prevention exercise programs based on the results
-  - Built an [automated fall-risk assessment & reporting system](https://github.com/Rukkha1024/elderly-balance-assessment-public) that grades fall risk from experimental data (TUG, gait, one-leg-standing, questionnaires) and auto-generates each participant's PDF report
+  - Built an [automated fall-risk assessment & reporting system](https://github.com/Rukkha1024/elderly-balance-assessment-public) that grades fall risk from a questionnaire and clinical tests (FES-I, Timed Up and Go, grip strength, gait parameters, one-leg standing, 30-second chair stand, and Berg Balance Scale) and auto-generates each participant's PDF report
   - Compared stepping vs. non-stepping responses to identical unexpected perturbations within subjects; under review[*](/publications/)
   - Analyzing age-related differences in perturbation responses in unconstrained environments (ongoing)
 - PI, NRF Master's Student Research Grant (2026–2027): predicting fall risk in older adults with muscle synergy and CNN[*](/grants/)
